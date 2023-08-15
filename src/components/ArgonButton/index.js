@@ -3,7 +3,7 @@
 * MicroEdge Suite - v1.0.0
 =========================================================
 
-* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Product Page: https://www.rishu.fun/product/microedge-dashboard-material-ui
 * Copyright 2021 MicroEdge (https://www.rishu.fun)
 
 Coded by www.rishu.fun

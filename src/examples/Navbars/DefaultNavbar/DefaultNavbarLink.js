@@ -3,7 +3,7 @@
 * Material Dashboard 2 PRO React - v2.1.0
 =========================================================
 
-* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Product Page: https://www.rishu.fun/product/microedge-dashboard-material-ui
 * Copyright 2023 MicroEdge (https://www.rishu.fun)
 
 Coded by www.rishu.fun

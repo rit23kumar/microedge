@@ -1,15 +1,15 @@
 {
-  "name": "argon-dashboard-mui",
+  "name": "microedge-dashboard-mui",
   "version": "3.0.1",
   "author": "MicroEdge",
   "license": "SEE LICENSE IN <https://www.rishu.fun/license>",
   "description": "React version of MicroEdge Suite by MicroEdge",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-dashboard-material-ui/issues"
+    "url": "https://github.com/creativetimofficial/microedge-dashboard-material-ui/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-dashboard-material-ui.git"
+    "url": "git+https://github.com/creativetimofficial/microedge-dashboard-material-ui.git"
   },
   "dependencies": {
     "@emotion/cache": "11.11.0",

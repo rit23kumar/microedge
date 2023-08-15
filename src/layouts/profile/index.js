@@ -3,7 +3,7 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Product Page: https://www.rishu.fun/product/microedge-dashboard-material-ui
 * Copyright 2023 MicroEdge (https://www.rishu.fun)
 
 Coded by www.rishu.fun
@@ -50,7 +50,7 @@ import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 const bgImage =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg";
+  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/microedge-dashboard-pro/assets/img/profile-layout-header.jpg";
 
 function Overview() {
   return (

@@ -14,7 +14,7 @@
 
 - Migration from Material-UI to MUI v5.
 - Migration from JSS to `styled` api, emotion and `sx` prop.
-- Product folders and files structured are updated: [README](https://github.com/creativetimofficial/argon-dashboard-material-ui/blob/main/README.md)
+- Product folders and files structured are updated: [README](https://github.com/creativetimofficial/microedge-dashboard-material-ui/blob/main/README.md)
 - New components are added
 - New example blocks are added
 - Components are Example Blocks are totally customizable and reusable now

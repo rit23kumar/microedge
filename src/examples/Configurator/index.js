@@ -3,7 +3,7 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Product Page: https://www.rishu.fun/product/microedge-dashboard-material-ui
 * Copyright 2023 MicroEdge (https://www.rishu.fun)
 
 Coded by www.rishu.fun
@@ -191,7 +191,7 @@ function Configurator() {
           <MicroEdgeBox mb={2}>
             <MicroEdgeButton
               component={Link}
-              href="https://www.rishu.fun/product/argon-dashboard-pro-material-ui"
+              href="https://www.rishu.fun/product/microedge-dashboard-pro-material-ui"
               target="_blank"
               rel="noreferrer"
               color="info"
@@ -203,7 +203,7 @@ function Configurator() {
           <MicroEdgeBox mb={2}>
             <MicroEdgeButton
               component={Link}
-              href="https://www.rishu.fun/product/argon-dashboard-material-ui"
+              href="https://www.rishu.fun/product/microedge-dashboard-material-ui"
               target="_blank"
               rel="noreferrer"
               color="dark"
@@ -214,7 +214,7 @@ function Configurator() {
           </MicroEdgeBox>
           <MicroEdgeButton
             component={Link}
-            href="https://www.rishu.fun/learning-lab/react/quick-start/argon-dashboard/"
+            href="https://www.rishu.fun/learning-lab/react/quick-start/microedge-dashboard/"
             target="_blank"
             rel="noreferrer"
             color={darkMode ? "white" : "dark"}
@@ -226,11 +226,11 @@ function Configurator() {
         </MicroEdgeBox>
         <MicroEdgeBox display="flex" justifyContent="center">
           <GitHubButton
-            href="https://github.com/creativetimofficial/argon-dashboard-material-ui"
+            href="https://github.com/creativetimofficial/microedge-dashboard-material-ui"
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star creativetimofficial/argon-dashboard-material-uit on GitHub"
+            aria-label="Star creativetimofficial/microedge-dashboard-material-uit on GitHub"
           >
             Star
           </GitHubButton>
@@ -244,7 +244,7 @@ function Configurator() {
             <MicroEdgeBox mr={1.5}>
               <MicroEdgeButton
                 component={Link}
-                href="//twitter.com/intent/tweet?text=Check%20MicroEdge%20Dashboard%202%20PRO%20MUI%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23react%20%mui&url=https%3A%2F%2Fwww.rishu.fun%2Fproduct%2Fargon-dashboard-material-ui"
+                href="//twitter.com/intent/tweet?text=Check%20MicroEdge%20Dashboard%202%20PRO%20MUI%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23react%20%mui&url=https%3A%2F%2Fwww.rishu.fun%2Fproduct%2Fmicroedge-dashboard-material-ui"
                 target="_blank"
                 rel="noreferrer"
                 color="dark"
@@ -255,7 +255,7 @@ function Configurator() {
             </MicroEdgeBox>
             <MicroEdgeButton
               component={Link}
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.rishu.fun/product/argon-dashboard-material-ui"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://www.rishu.fun/product/microedge-dashboard-material-ui"
               target="_blank"
               rel="noreferrer"
               color="dark"

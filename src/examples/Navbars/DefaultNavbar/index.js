@@ -4,10 +4,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -27,9 +27,9 @@ import Icon from "@mui/material/Icon";
 import Container from "@mui/material/Container";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // MicroEdge Suite examples components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
@@ -39,10 +39,10 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 import breakpoints from "assets/theme/base/breakpoints";
 
 // Material Dashboard 2 PRO React context
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function DefaultNavbar({ brand, transparent, light, action }) {
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { darkMode } = controller;
   const [mobileNavbar, setMobileNavbar] = useState(false);
   const [mobileView, setMobileView] = useState(false);
@@ -77,7 +77,7 @@ function DefaultNavbar({ brand, transparent, light, action }) {
 
   return (
     <Container>
-      <ArgonBox
+      <MicroEdgeBox
         pt={0.75}
         pb={1}
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
@@ -100,13 +100,13 @@ function DefaultNavbar({ brand, transparent, light, action }) {
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
-        <ArgonBox display="flex" justifyContent="space-between" alignItems="center" px={2}>
-          <ArgonBox component={Link} to="/" py={transparent ? 1.5 : 0.75} lineHeight={1}>
-            <ArgonTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
+        <MicroEdgeBox display="flex" justifyContent="space-between" alignItems="center" px={2}>
+          <MicroEdgeBox component={Link} to="/" py={transparent ? 1.5 : 0.75} lineHeight={1}>
+            <MicroEdgeTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
               {brand}
-            </ArgonTypography>
-          </ArgonBox>
-          <ArgonBox color="inherit" display={{ xs: "none", lg: "flex" }} m={0} p={0}>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+          <MicroEdgeBox color="inherit" display={{ xs: "none", lg: "flex" }} m={0} p={0}>
             <DefaultNavbarLink
               icon="donut_large"
               name="dashboard"
@@ -126,11 +126,11 @@ function DefaultNavbar({ brand, transparent, light, action }) {
               route="/authentication/sign-in"
               light={light}
             />
-          </ArgonBox>
+          </MicroEdgeBox>
           {action &&
             (action.type === "internal" ? (
-              <ArgonBox display={{ xs: "none", lg: "inline-block" }}>
-                <ArgonButton
+              <MicroEdgeBox display={{ xs: "none", lg: "inline-block" }}>
+                <MicroEdgeButton
                   component={Link}
                   to={action.route}
                   variant={action.variant ? action.variant : "contained"}
@@ -138,11 +138,11 @@ function DefaultNavbar({ brand, transparent, light, action }) {
                   size="small"
                 >
                   {action.label}
-                </ArgonButton>
-              </ArgonBox>
+                </MicroEdgeButton>
+              </MicroEdgeBox>
             ) : (
-              <ArgonBox display={{ xs: "none", lg: "inline-block" }}>
-                <ArgonButton
+              <MicroEdgeBox display={{ xs: "none", lg: "inline-block" }}>
+                <MicroEdgeButton
                   component="a"
                   href={action.route}
                   target="_blank"
@@ -153,10 +153,10 @@ function DefaultNavbar({ brand, transparent, light, action }) {
                   sx={{ mt: -0.3 }}
                 >
                   {action.label}
-                </ArgonButton>
-              </ArgonBox>
+                </MicroEdgeButton>
+              </MicroEdgeBox>
             ))}
-          <ArgonBox
+          <MicroEdgeBox
             display={{ xs: "inline-block", lg: "none" }}
             lineHeight={0}
             py={1.5}
@@ -166,9 +166,9 @@ function DefaultNavbar({ brand, transparent, light, action }) {
             onClick={openMobileNavbar}
           >
             <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
       {mobileView && <DefaultNavbarMobile open={mobileNavbar} close={closeMobileNavbar} />}
     </Container>
   );

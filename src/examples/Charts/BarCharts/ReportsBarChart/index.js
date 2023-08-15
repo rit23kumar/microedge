@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -26,8 +26,8 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite example components
 import BarReportsChartItem from "examples/Charts/BarCharts/ReportsBarChart/ReportsBarChartItem";
@@ -51,10 +51,10 @@ function ReportsBarChart({ color, title, description, chart, items }) {
 
   return (
     <Card sx={{ height: "100%" }}>
-      <ArgonBox padding="1rem">
+      <MicroEdgeBox padding="1rem">
         {useMemo(
           () => (
-            <ArgonBox
+            <MicroEdgeBox
               variant="gradient"
               bgColor={color}
               borderRadius="lg"
@@ -64,26 +64,26 @@ function ReportsBarChart({ color, title, description, chart, items }) {
               height="12.5rem"
             >
               <Bar data={data} options={options} />
-            </ArgonBox>
+            </MicroEdgeBox>
           ),
           [chart, color]
         )}
-        <ArgonBox px={1}>
-          <ArgonBox mb={2}>
-            <ArgonTypography variant="h6" fontWeight="medium" textTransform="capitalize">
+        <MicroEdgeBox px={1}>
+          <MicroEdgeBox mb={2}>
+            <MicroEdgeTypography variant="h6" fontWeight="medium" textTransform="capitalize">
               {title}
-            </ArgonTypography>
-            <ArgonTypography component="div" variant="button" color="text" fontWeight="regular">
+            </MicroEdgeTypography>
+            <MicroEdgeTypography component="div" variant="button" color="text" fontWeight="regular">
               {description}
-            </ArgonTypography>
-          </ArgonBox>
-          <ArgonBox py={1} px={0.5}>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+          <MicroEdgeBox py={1} px={0.5}>
             <Grid container spacing={2}>
               {renderItems}
             </Grid>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

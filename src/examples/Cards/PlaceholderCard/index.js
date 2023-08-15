@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -21,8 +21,8 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function PlaceholderCard({ icon, title, hasBorder, outlined }) {
   return (
@@ -35,7 +35,7 @@ function PlaceholderCard({ icon, title, hasBorder, outlined }) {
         border: hasBorder || outlined ? `${borderWidth[1]} solid ${borderColor}` : "none",
       })}
     >
-      <ArgonBox
+      <MicroEdgeBox
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -43,15 +43,15 @@ function PlaceholderCard({ icon, title, hasBorder, outlined }) {
         height="100%"
         p={3}
       >
-        <ArgonBox color="secondary" mb={0.5}>
+        <MicroEdgeBox color="secondary" mb={0.5}>
           <Icon fontSize="default" sx={{ fontWeight: "bold" }}>
             {icon}
           </Icon>
-        </ArgonBox>
-        <ArgonTypography variant={title.variant} color="secondary">
+        </MicroEdgeBox>
+        <MicroEdgeTypography variant={title.variant} color="secondary">
           {title.text}
-        </ArgonTypography>
-      </ArgonBox>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
     </Card>
   );
 }

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -22,27 +22,27 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite contexts
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function DetailedStaticsCard({ bgColor, title, count, percentage, icon, direction }) {
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { darkMode } = controller;
 
   return (
     <Card>
-      <ArgonBox
+      <MicroEdgeBox
         bgColor={bgColor === "white" && darkMode ? "transparent" : bgColor}
         variant={bgColor === "white" && darkMode ? "contained" : "gradient"}
       >
-        <ArgonBox p={2}>
+        <MicroEdgeBox p={2}>
           <Grid container>
             {direction === "left" ? (
               <Grid item>
-                <ArgonBox
+                <MicroEdgeBox
                   variant="gradient"
                   bgColor={bgColor === "white" ? icon.color : "white"}
                   color={bgColor === "white" ? "white" : "dark"}
@@ -58,41 +58,41 @@ function DetailedStaticsCard({ bgColor, title, count, percentage, icon, directio
                       {icon.component}
                     </Icon>
                   ) : (
-                    <ArgonBox
+                    <MicroEdgeBox
                       fontSize="1.125rem"
                       display="grid"
                       placeItems="center"
                       color="inherit"
                     >
                       {icon.component}
-                    </ArgonBox>
+                    </MicroEdgeBox>
                   )}
-                </ArgonBox>
+                </MicroEdgeBox>
               </Grid>
             ) : null}
             <Grid item xs={8}>
-              <ArgonBox ml={direction === "left" ? 2 : 0} lineHeight={1}>
-                <ArgonTypography
+              <MicroEdgeBox ml={direction === "left" ? 2 : 0} lineHeight={1}>
+                <MicroEdgeTypography
                   variant="button"
                   color={bgColor === "white" ? "text" : "white"}
                   textTransform="uppercase"
                   fontWeight="medium"
                 >
                   {title}
-                </ArgonTypography>
-                <ArgonTypography
+                </MicroEdgeTypography>
+                <MicroEdgeTypography
                   variant="h5"
                   fontWeight="bold"
                   color={bgColor === "white" ? "dark" : "white"}
                   mb={1}
                 >
                   {count}
-                </ArgonTypography>
-              </ArgonBox>
+                </MicroEdgeTypography>
+              </MicroEdgeBox>
             </Grid>
             {direction === "right" ? (
               <Grid item xs={4}>
-                <ArgonBox
+                <MicroEdgeBox
                   variant="gradient"
                   bgColor={bgColor === "white" ? icon.color : "white"}
                   color={bgColor === "white" ? "white" : "dark"}
@@ -109,20 +109,20 @@ function DetailedStaticsCard({ bgColor, title, count, percentage, icon, directio
                       {icon.component}
                     </Icon>
                   ) : (
-                    <ArgonBox
+                    <MicroEdgeBox
                       fontSize="1.125rem"
                       display="grid"
                       placeItems="center"
                       color="inherit"
                     >
                       {icon.component}
-                    </ArgonBox>
+                    </MicroEdgeBox>
                   )}
-                </ArgonBox>
+                </MicroEdgeBox>
               </Grid>
             ) : null}
           </Grid>
-          <ArgonTypography
+          <MicroEdgeTypography
             display="flex"
             alignItems="center"
             variant="button"
@@ -130,7 +130,7 @@ function DetailedStaticsCard({ bgColor, title, count, percentage, icon, directio
             color={percentage.color}
           >
             {percentage.count}
-            <ArgonTypography
+            <MicroEdgeTypography
               variant="body2"
               fontWeight="regular"
               color={bgColor === "white" ? "text" : "white"}
@@ -138,10 +138,10 @@ function DetailedStaticsCard({ bgColor, title, count, percentage, icon, directio
               mt={-0.125}
             >
               {percentage.text}
-            </ArgonTypography>
-          </ArgonTypography>
-        </ArgonBox>
-      </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

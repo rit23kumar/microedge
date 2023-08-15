@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -26,8 +26,8 @@ import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function TransparentBlogCard({ image, title, description, action }) {
   const cardImageStyles = {
@@ -90,28 +90,28 @@ function TransparentBlogCard({ image, title, description, action }) {
           <CardMedia src={image} component="img" title={title} sx={cardImageStyles} />
         </MuiLink>
       )}
-      <ArgonBox py={3}>
+      <MicroEdgeBox py={3}>
         {action.type === "internal" ? (
           <Link to={action.route} sx={cardActionStyles}>
-            <ArgonTypography variant="h5" gutterBottom>
+            <MicroEdgeTypography variant="h5" gutterBottom>
               {title}
-            </ArgonTypography>
+            </MicroEdgeTypography>
           </Link>
         ) : (
           <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
-            <ArgonTypography variant="h5" gutterBottom>
+            <MicroEdgeTypography variant="h5" gutterBottom>
               {title}
-            </ArgonTypography>
+            </MicroEdgeTypography>
           </MuiLink>
         )}
-        <ArgonBox mb={2}>
-          <ArgonTypography variant="body2" component="p" color="text">
+        <MicroEdgeBox mb={2}>
+          <MicroEdgeTypography variant="body2" component="p" color="text">
             {description}
-          </ArgonTypography>
-        </ArgonBox>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
         {action.type === "internal" ? (
           <Link to={action.route} sx={cardActionStyles}>
-            <ArgonTypography
+            <MicroEdgeTypography
               variant="body2"
               color={action.color}
               textTransform="capitalize"
@@ -119,11 +119,11 @@ function TransparentBlogCard({ image, title, description, action }) {
             >
               {action.label}
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </ArgonTypography>
+            </MicroEdgeTypography>
           </Link>
         ) : (
           <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
-            <ArgonTypography
+            <MicroEdgeTypography
               variant="body2"
               color={action.color}
               textTransform="capitalize"
@@ -131,10 +131,10 @@ function TransparentBlogCard({ image, title, description, action }) {
             >
               {action.label}
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </ArgonTypography>
+            </MicroEdgeTypography>
           </MuiLink>
         )}
-      </ArgonBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

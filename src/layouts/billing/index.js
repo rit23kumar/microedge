@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -17,7 +17,7 @@ Coded by www.creative-tim.com
 import Grid from "@mui/material/Grid";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // MicroEdge Suite components
 import MasterCard from "examples/Cards/MasterCard";
@@ -33,8 +33,8 @@ import Transactions from "layouts/billing/components/Transactions";
 function Billing() {
   return (
     <BaseLayout stickyNavbar>
-      <ArgonBox mt={4}>
-        <ArgonBox mb={3}>
+      <MicroEdgeBox mt={4}>
+        <MicroEdgeBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={8}>
               <Grid container spacing={3}>
@@ -66,8 +66,8 @@ function Billing() {
               <Invoices />
             </Grid>
           </Grid>
-        </ArgonBox>
-        <ArgonBox mb={3}>
+        </MicroEdgeBox>
+        <MicroEdgeBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={7}>
               <BillingInformation />
@@ -76,8 +76,8 @@ function Billing() {
               <Transactions />
             </Grid>
           </Grid>
-        </ArgonBox>
-      </ArgonBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </BaseLayout>
   );
 }

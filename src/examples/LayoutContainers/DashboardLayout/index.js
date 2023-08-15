@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -22,13 +22,13 @@ import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // MicroEdge Suite context
-import { useArgonController, setLayout } from "context";
+import { useMicroEdgeController, setLayout } from "context";
 
 function DashboardLayout({ bgColor, children, ...rest }) {
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { miniSidenav, darkMode } = controller;
   const { pathname } = useLocation();
 
@@ -39,7 +39,7 @@ function DashboardLayout({ bgColor, children, ...rest }) {
   const background = darkMode && !bgColor ? "transparent" : bgColor;
 
   return (
-    <ArgonBox
+    <MicroEdgeBox
       sx={({ breakpoints, transitions, functions: { pxToRem } }) => ({
         p: 3,
 
@@ -52,7 +52,7 @@ function DashboardLayout({ bgColor, children, ...rest }) {
         },
       })}
     >
-      <ArgonBox
+      <MicroEdgeBox
         bgColor={background || "info"}
         height="300px"
         width="100vw"
@@ -63,7 +63,7 @@ function DashboardLayout({ bgColor, children, ...rest }) {
         {...rest}
       />
       {children}
-    </ArgonBox>
+    </MicroEdgeBox>
   );
 }
 

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,9 +20,9 @@ import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonBadge from "components/ArgonBadge";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeBadge from "components/MicroEdgeBadge";
 
 // Timeline context
 import { useTimeline } from "examples/Timeline/context";
@@ -39,16 +39,16 @@ function TimelineItem({ color, icon, title, dateTime, description, badges, lastI
           const badgeKey = `badge-${key}`;
 
           return (
-            <ArgonBox key={badgeKey} mr={key === badges.length - 1 ? 0 : 0.5}>
-              <ArgonBadge color={color} size="xs" badgeContent={badge} container />
-            </ArgonBox>
+            <MicroEdgeBox key={badgeKey} mr={key === badges.length - 1 ? 0 : 0.5}>
+              <MicroEdgeBadge color={color} size="xs" badgeContent={badge} container />
+            </MicroEdgeBox>
           );
         })
       : null;
 
   return (
-    <ArgonBox position="relative" sx={(theme) => timelineItem(theme, { lastItem })}>
-      <ArgonBox
+    <MicroEdgeBox position="relative" sx={(theme) => timelineItem(theme, { lastItem })}>
+      <MicroEdgeBox
         bgColor={isDark ? "dark" : "white"}
         width="1.625rem"
         height="1.625rem"
@@ -59,34 +59,34 @@ function TimelineItem({ color, icon, title, dateTime, description, badges, lastI
         zIndex={2}
       >
         <Icon sx={(theme) => timelineItemIcon(theme, { color })}>{icon}</Icon>
-      </ArgonBox>
-      <ArgonBox ml={5.75} pt={description ? 0.7 : 0.5} lineHeight={0} maxWidth="30rem">
-        <ArgonTypography variant="button" fontWeight="medium" color={isDark ? "white" : "dark"}>
+      </MicroEdgeBox>
+      <MicroEdgeBox ml={5.75} pt={description ? 0.7 : 0.5} lineHeight={0} maxWidth="30rem">
+        <MicroEdgeTypography variant="button" fontWeight="medium" color={isDark ? "white" : "dark"}>
           {title}
-        </ArgonTypography>
-        <ArgonBox mt={0.5}>
-          <ArgonTypography
+        </MicroEdgeTypography>
+        <MicroEdgeBox mt={0.5}>
+          <MicroEdgeTypography
             variant="caption"
             fontWeight="medium"
             color={isDark ? "secondary" : "text"}
           >
             {dateTime}
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox mt={2} mb={1.5}>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeBox mt={2} mb={1.5}>
           {description ? (
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               {description}
-            </ArgonTypography>
+            </MicroEdgeTypography>
           ) : null}
-        </ArgonBox>
+        </MicroEdgeBox>
         {badges.length > 0 ? (
-          <ArgonBox display="flex" pb={lastItem ? 1 : 2}>
+          <MicroEdgeBox display="flex" pb={lastItem ? 1 : 2}>
             {renderBadges}
-          </ArgonBox>
+          </MicroEdgeBox>
         ) : null}
-      </ArgonBox>
-    </ArgonBox>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 

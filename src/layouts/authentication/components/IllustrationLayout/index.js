@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,8 +20,8 @@ import PropTypes from "prop-types";
 import Grid from "@mui/material/Grid";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -33,35 +33,35 @@ function IllustrationLayout({ color, header, title, description, button, illustr
       <DefaultNavbar
         action={{
           type: "external",
-          route: "https://creative-tim.com/product/argon-dashboard-material-ui",
+          route: "https://rishu.fun/product/argon-dashboard-material-ui",
           label: "Free Download",
           ...button,
         }}
       />
       <Grid container>
         <Grid item xs={11} sm={8} md={6} lg={4} xl={3} sx={{ mx: "auto" }}>
-          <ArgonBox display="flex" flexDirection="column" justifyContent="center" height="100vh">
-            <ArgonBox pt={3} px={3}>
+          <MicroEdgeBox display="flex" flexDirection="column" justifyContent="center" height="100vh">
+            <MicroEdgeBox pt={3} px={3}>
               {!header ? (
                 <>
-                  <ArgonBox mb={1}>
-                    <ArgonTypography variant="h4" fontWeight="bold">
+                  <MicroEdgeBox mb={1}>
+                    <MicroEdgeTypography variant="h4" fontWeight="bold">
                       {title}
-                    </ArgonTypography>
-                  </ArgonBox>
-                  <ArgonTypography variant="body2" fontWeight="regular" color="text">
+                    </MicroEdgeTypography>
+                  </MicroEdgeBox>
+                  <MicroEdgeTypography variant="body2" fontWeight="regular" color="text">
                     {description}
-                  </ArgonTypography>
+                  </MicroEdgeTypography>
                 </>
               ) : (
                 header
               )}
-            </ArgonBox>
-            <ArgonBox p={3}>{children}</ArgonBox>
-          </ArgonBox>
+            </MicroEdgeBox>
+            <MicroEdgeBox p={3}>{children}</MicroEdgeBox>
+          </MicroEdgeBox>
         </Grid>
         <Grid item xs={12} lg={6}>
-          <ArgonBox
+          <MicroEdgeBox
             display={{ xs: "none", lg: "flex" }}
             flexDirection="column"
             justifyContent="center"
@@ -75,7 +75,7 @@ function IllustrationLayout({ color, header, title, description, button, illustr
             px={13}
             sx={{ overflow: "hidden" }}
           >
-            <ArgonBox
+            <MicroEdgeBox
               component="img"
               src={illustration.image}
               alt="background"
@@ -84,7 +84,7 @@ function IllustrationLayout({ color, header, title, description, button, illustr
               top={0}
               left={0}
             />
-            <ArgonBox
+            <MicroEdgeBox
               bgColor={color}
               variant="gradient"
               width="100%"
@@ -94,23 +94,23 @@ function IllustrationLayout({ color, header, title, description, button, illustr
               left={0}
               opacity={0.7}
             />
-            <ArgonBox position="relative">
+            <MicroEdgeBox position="relative">
               {illustration.title && (
-                <ArgonBox mt={6} mb={1}>
-                  <ArgonTypography variant="h4" color="white" fontWeight="bold">
+                <MicroEdgeBox mt={6} mb={1}>
+                  <MicroEdgeTypography variant="h4" color="white" fontWeight="bold">
                     {illustration.title}
-                  </ArgonTypography>
-                </ArgonBox>
+                  </MicroEdgeTypography>
+                </MicroEdgeBox>
               )}
               {illustration.description && (
-                <ArgonBox mb={1}>
-                  <ArgonTypography variant="body2" color="white">
+                <MicroEdgeBox mb={1}>
+                  <MicroEdgeTypography variant="body2" color="white">
                     {illustration.description}
-                  </ArgonTypography>
-                </ArgonBox>
+                  </MicroEdgeTypography>
+                </MicroEdgeBox>
               )}
-            </ArgonBox>
-          </ArgonBox>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
         </Grid>
       </Grid>
     </PageLayout>

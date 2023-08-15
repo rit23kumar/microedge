@@ -1,33 +1,33 @@
-# [MicroEdge Suite](http://demos.creative-tim.com/argon-dashboard-material-ui/?ref=readme-admui) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/argon-dashboard-material-ui&text=Check%20Argon%20Dashboard%20React%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#argondesign%20#react%20https://www.creative-tim.com/product/argon-dashboard-material-ui)
+# [MicroEdge Suite](http://demos.rishu.fun/argon-dashboard-material-ui/?ref=readme-admui) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.rishu.fun/product/argon-dashboard-material-ui&text=Check%20MicroEdge%20Dashboard%20React%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#argondesign%20#react%20https://www.rishu.fun/product/argon-dashboard-material-ui)
 
 ![version](https://img.shields.io/badge/version-3.0.1-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-material-ui.svg)](https://github.com/creativetimofficial/argon-dashboard-material-ui/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-material-ui.svg)](https://github.com/creativetimofficial/argon-dashboard-material-ui/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Image](https://s3.amazonaws.com/creativetim_bucket/products/447/original/argon-dashboard-material-ui.jpg)
 
-Start your Development with an Innovative Admin Template for MUI and React. If you like the look & feel of the hottest design trend right now, Argon, you will fall in love with this dashboard! It features a huge number of components built to fit together and look amazing.
+Start your Development with an Innovative Admin Template for MUI and React. If you like the look & feel of the hottest design trend right now, MicroEdge, you will fall in love with this dashboard! It features a huge number of components built to fit together and look amazing.
 
 **Fully Coded Elements**
 
 MicroEdge Suite is built with over 70 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining. All components can take variations in color, which you can easily modify using MUI styled api and sx prop. You will save a lot of time going from prototyping to full-functional code because all elements are implemented. This Free MUI Dashboard is coming with prebuilt design blocks, so the development process is seamless, switching from our pages to the real website is very easy to be done.
 
-View [all components here](https://www.creative-tim.com/learning-lab/material-ui/alerts/argon-dashboard/).
+View [all components here](https://www.rishu.fun/learning-lab/material-ui/alerts/argon-dashboard/).
 
 **Documentation built by Developers**
 
 Each element is well presented in very complex documentation.
 
-You can read more about the [documentation here](https://www.creative-tim.com/learning-lab/material-ui/overview/argon-dashboard/).
+You can read more about the [documentation here](https://www.rishu.fun/learning-lab/material-ui/overview/argon-dashboard/).
 
 **Example Pages**
 
 If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. Every page is spaced well, with attractive layouts and pleasing shapes. MicroEdge Suite has everything you need to quickly set up an amazing project.
 
-View [example pages here](https://demos.creative-tim.com/argon-dashboard-material-ui/).
+View [example pages here](https://demos.rishu.fun/argon-dashboard-material-ui/).
 
 **HELPFUL LINKS**
 
 - View [Github Repository](https://github.com/creativetimofficial/argon-dashboard-material-ui)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
+- Check [FAQ Page](https://www.rishu.fun/faq)
 
 #### Special thanks
 
@@ -57,28 +57,28 @@ Let us know your thoughts below. And good luck with development!
 
 ## Versions
 
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-material-ui?ref=readme-admui)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.rishu.fun/product/argon-dashboard-material-ui?ref=readme-admui)
 
 | React |
 | ----- |
 
-| [![MicroEdge Suite](https://s3.amazonaws.com/creativetim_bucket/products/447/thumb/argon-dashboard-material-ui.jpg)](http://demos.creative-tim.com/argon-dashboard-material-ui/?ref=readme-admui)
+| [![MicroEdge Suite](https://s3.amazonaws.com/creativetim_bucket/products/447/thumb/argon-dashboard-material-ui.jpg)](http://demos.rishu.fun/argon-dashboard-material-ui/?ref=readme-admui)
 
 ## Demo
 
-- [Dashboard](http://demos.creative-tim.com/argon-dashboard-material-ui/#/dashboard?ref=readme-admui)
-- [Profile](https://demos.creative-tim.com/argon-dashboard-material-ui/#/profile?ref=readme-admui)
-- [RTL](https://demos.creative-tim.com/argon-dashboard-material-ui/#/rtl?ref=readme-admui)
-- [Sign In](https://demos.creative-tim.com/argon-dashboard-material-ui/#/authentication/sign-in?ref=readme-admui)
-- [Sign Up](https://demos.creative-tim.com/argon-dashboard-material-ui/#/authentication/sign-up?ref=readme-admui)
+- [Dashboard](http://demos.rishu.fun/argon-dashboard-material-ui/#/dashboard?ref=readme-admui)
+- [Profile](https://demos.rishu.fun/argon-dashboard-material-ui/#/profile?ref=readme-admui)
+- [RTL](https://demos.rishu.fun/argon-dashboard-material-ui/#/rtl?ref=readme-admui)
+- [Sign In](https://demos.rishu.fun/argon-dashboard-material-ui/#/authentication/sign-in?ref=readme-admui)
+- [Sign Up](https://demos.rishu.fun/argon-dashboard-material-ui/#/authentication/sign-up?ref=readme-admui)
 
-[View More](https://demos.creative-tim.com/argon-dashboard-material-ui/#/dashboard?ref=readme-admui).
+[View More](https://demos.rishu.fun/argon-dashboard-material-ui/#/dashboard?ref=readme-admui).
 
 ## Quick start
 
 Quick start options:
 
-- Buy from [Creative Tim](https://www.creative-tim.com/product/argon-dashboard-material-ui?ref=readme-admui).
+- Buy from [MicroEdge](https://www.rishu.fun/product/argon-dashboard-material-ui?ref=readme-admui).
 
 ## Terminal Commands
 
@@ -87,7 +87,7 @@ Quick start options:
 
 ## Documentation
 
-The documentation for the MicroEdge Suite is hosted at our [website](https://www.creative-tim.com/learning-lab/material-ui/overview/argon-dashboard/?ref=readme-admui).
+The documentation for the MicroEdge Suite is hosted at our [website](https://www.rishu.fun/learning-lab/material-ui/overview/argon-dashboard/?ref=readme-admui).
 
 ### What's included
 
@@ -119,15 +119,15 @@ argon-dashboard-material-ui
     │   │       ├── index.js
     │   │       └── theme-rtl.js
     │   ├── components
-    │   │   ├── ArgonAlert
-    │   │   ├── ArgonAvatar
-    │   │   ├── ArgonBadge
-    │   │   ├── ArgonBox
-    │   │   ├── ArgonButton
-    │   │   ├── ArgonInput
-    │   │   ├── ArgonPagination
-    │   │   ├── ArgonProgress
-    │   │   └── ArgonTypography
+    │   │   ├── MicroEdgeAlert
+    │   │   ├── MicroEdgeAvatar
+    │   │   ├── MicroEdgeBadge
+    │   │   ├── MicroEdgeBox
+    │   │   ├── MicroEdgeButton
+    │   │   ├── MicroEdgeInput
+    │   │   ├── MicroEdgePagination
+    │   │   ├── MicroEdgeProgress
+    │   │   └── MicroEdgeTypography
     │   ├── context
     │   ├── examples
     │   │   ├── Breadcrumbs
@@ -173,39 +173,39 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 
-- [Live Preview](https://demos.creative-tim.com/argon-dashboard-material-ui/#/dashboard?ref=readme-admui)
-- [Download Page](https://www.creative-tim.com/product/argon-dashboard-material-ui?ref=readme-admui)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/material-ui/overview/argon-dashboard/?ref=readme-admui)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-admui)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-admui)
+- [Live Preview](https://demos.rishu.fun/argon-dashboard-material-ui/#/dashboard?ref=readme-admui)
+- [Download Page](https://www.rishu.fun/product/argon-dashboard-material-ui?ref=readme-admui)
+- Documentation is [here](https://www.rishu.fun/learning-lab/material-ui/overview/argon-dashboard/?ref=readme-admui)
+- [License Agreement](https://www.rishu.fun/license?ref=readme-admui)
+- [Support](https://www.rishu.fun/contact-us?ref=readme-admui)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard-material-ui/issues)
 
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the MicroEdge Suite. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the MicroEdge Suite. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/argon-dashboard-material-ui?ref=readme-admui).
+1. Make sure that you are using the latest version of the MicroEdge Suite. Check the CHANGELOG from your dashboard on our [website](https://www.rishu.fun/product/argon-dashboard-material-ui?ref=readme-admui).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-admui) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](https://www.rishu.fun/contact-us?ref=readme-admui) instead of opening an issue.
 
 ## Licensing
 
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-admui)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-admui)
+- Copyright 2023 [MicroEdge](https://www.rishu.fun?ref=readme-admui)
+- MicroEdge [license](https://www.rishu.fun/license?ref=readme-admui)
 
 ## Useful Links
 
-- [More products](https://www.creative-tim.com/templates?ref=readme-admui) from Creative Tim
+- [More products](https://www.rishu.fun/templates?ref=readme-admui) from MicroEdge
 
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
 
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-admui) from Creative Tim
+- [Freebies](https://www.rishu.fun/bootstrap-themes/free?ref=readme-admui) from MicroEdge
 
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-admui) (earn money)
+- [Affiliate Program](https://www.rishu.fun/affiliates/new?ref=readme-admui) (earn money)
 
 ##### Social Media
 

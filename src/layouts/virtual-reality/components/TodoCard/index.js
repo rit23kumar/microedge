@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -19,42 +19,42 @@ import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function TodoCard() {
   return (
     <Card>
-      <ArgonBox bgColor="dark" variant="gradient">
-        <ArgonBox p={3}>
-          <ArgonBox display="flex" justifyContent="space-between">
-            <ArgonTypography variant="h5" color="white">
+      <MicroEdgeBox bgColor="dark" variant="gradient">
+        <MicroEdgeBox p={3}>
+          <MicroEdgeBox display="flex" justifyContent="space-between">
+            <MicroEdgeTypography variant="h5" color="white">
               To Do
-            </ArgonTypography>
-            <ArgonBox textAlign="center" lineHeight={1}>
-              <ArgonTypography variant="h1" color="white" fontWeight="bold">
+            </MicroEdgeTypography>
+            <MicroEdgeBox textAlign="center" lineHeight={1}>
+              <MicroEdgeTypography variant="h1" color="white" fontWeight="bold">
                 7
-              </ArgonTypography>
-              <ArgonTypography variant="button" color="white" fontWeight="regular">
+              </MicroEdgeTypography>
+              <MicroEdgeTypography variant="button" color="white" fontWeight="regular">
                 items
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
-          <ArgonTypography variant="body2" color="white" fontWeight="regular">
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
+          <MicroEdgeTypography variant="body2" color="white" fontWeight="regular">
             Shopping
-          </ArgonTypography>
-          <ArgonTypography variant="body2" color="white" fontWeight="regular">
+          </MicroEdgeTypography>
+          <MicroEdgeTypography variant="body2" color="white" fontWeight="regular">
             Meeting
-          </ArgonTypography>
-        </ArgonBox>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
         <Tooltip title="Show More" placement="top" sx={{ cursor: "pointer" }}>
-          <ArgonBox textAlign="center" color="white" py={0.5} lineHeight={0}>
+          <MicroEdgeBox textAlign="center" color="white" py={0.5} lineHeight={0}>
             <Icon sx={{ fontWeight: "bold" }} color="inherit" fontSize="default">
               keyboard_arrow_down
             </Icon>
-          </ArgonBox>
+          </MicroEdgeBox>
         </Tooltip>
-      </ArgonBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

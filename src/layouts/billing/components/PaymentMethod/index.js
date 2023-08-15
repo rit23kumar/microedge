@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,9 +20,9 @@ import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // MicroEdge Suite base styles
 import borders from "assets/theme/base/borders";
@@ -36,19 +36,19 @@ function PaymentMethod() {
 
   return (
     <Card id="delete-account">
-      <ArgonBox pt={2} px={2} display="flex" justifyContent="space-between" alignItems="center">
-        <ArgonTypography variant="h6" fontWeight="medium">
+      <MicroEdgeBox pt={2} px={2} display="flex" justifyContent="space-between" alignItems="center">
+        <MicroEdgeTypography variant="h6" fontWeight="medium">
           Payment Method
-        </ArgonTypography>
-        <ArgonButton variant="gradient" color="dark">
+        </MicroEdgeTypography>
+        <MicroEdgeButton variant="gradient" color="dark">
           <Icon sx={{ fontWeight: "bold" }}>add</Icon>
           &nbsp;Add New Card
-        </ArgonButton>
-      </ArgonBox>
-      <ArgonBox p={2}>
+        </MicroEdgeButton>
+      </MicroEdgeBox>
+      <MicroEdgeBox p={2}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
-            <ArgonBox
+            <MicroEdgeBox
               border={`${borderWidth[1]} solid ${borderColor}`}
               borderRadius="lg"
               display="flex"
@@ -56,21 +56,21 @@ function PaymentMethod() {
               alignItems="center"
               p={3}
             >
-              <ArgonBox component="img" src={masterCardLogo} alt="master card" width="10%" mr={2} />
-              <ArgonTypography variant="h6" fontWeight="medium">
+              <MicroEdgeBox component="img" src={masterCardLogo} alt="master card" width="10%" mr={2} />
+              <MicroEdgeTypography variant="h6" fontWeight="medium">
                 ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;7852
-              </ArgonTypography>
-              <ArgonBox ml="auto" lineHeight={0}>
+              </MicroEdgeTypography>
+              <MicroEdgeBox ml="auto" lineHeight={0}>
                 <Tooltip title="Edit Card" placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
                     edit
                   </Icon>
                 </Tooltip>
-              </ArgonBox>
-            </ArgonBox>
+              </MicroEdgeBox>
+            </MicroEdgeBox>
           </Grid>
           <Grid item xs={12} md={6}>
-            <ArgonBox
+            <MicroEdgeBox
               border={`${borderWidth[1]} solid ${borderColor}`}
               borderRadius="lg"
               display="flex"
@@ -78,21 +78,21 @@ function PaymentMethod() {
               alignItems="center"
               p={3}
             >
-              <ArgonBox component="img" src={visaLogo} alt="master card" width="10%" mr={2} />
-              <ArgonTypography variant="h6" fontWeight="medium">
+              <MicroEdgeBox component="img" src={visaLogo} alt="master card" width="10%" mr={2} />
+              <MicroEdgeTypography variant="h6" fontWeight="medium">
                 ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;5248
-              </ArgonTypography>
-              <ArgonBox ml="auto" lineHeight={0}>
+              </MicroEdgeTypography>
+              <MicroEdgeBox ml="auto" lineHeight={0}>
                 <Tooltip title="Edit Card" placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
                     edit
                   </Icon>
                 </Tooltip>
-              </ArgonBox>
-            </ArgonBox>
+              </MicroEdgeBox>
+            </MicroEdgeBox>
           </Grid>
         </Grid>
-      </ArgonBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 // MicroEdge Suite components
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 const categoriesListData = [
   {
@@ -24,9 +24,9 @@ const categoriesListData = [
     description: (
       <>
         250 in stock,{" "}
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           346+ sold
-        </ArgonTypography>
+        </MicroEdgeTypography>
       </>
     ),
     route: "/",
@@ -38,9 +38,9 @@ const categoriesListData = [
     description: (
       <>
         123 closed,{" "}
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           15 open
-        </ArgonTypography>
+        </MicroEdgeTypography>
       </>
     ),
     route: "/",
@@ -52,9 +52,9 @@ const categoriesListData = [
     description: (
       <>
         1 is active,{" "}
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           40 closed
-        </ArgonTypography>
+        </MicroEdgeTypography>
       </>
     ),
     route: "/",
@@ -65,9 +65,9 @@ const categoriesListData = [
     name: "Happy Users",
     description: (
       <>
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           +&nbsp;430
-        </ArgonTypography>
+        </MicroEdgeTypography>
       </>
     ),
     route: "/",

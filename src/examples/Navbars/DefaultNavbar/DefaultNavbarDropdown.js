@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,8 +24,8 @@ import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function DefaultNavbarDropdown({
   name,
@@ -52,7 +52,7 @@ function DefaultNavbarDropdown({
 
   return (
     <>
-      <ArgonBox
+      <MicroEdgeBox
         {...rest}
         mx={0.5}
         p={1}
@@ -64,16 +64,16 @@ function DefaultNavbarDropdown({
         {...(href && linkComponent)}
       >
         {icon && (
-          <ArgonTypography
+          <MicroEdgeTypography
             variant="body2"
             lineHeight={1}
             color="inherit"
             sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
           >
             {icon}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         )}
-        <ArgonTypography
+        <MicroEdgeTypography
           variant="button"
           fontWeight="regular"
           textTransform="capitalize"
@@ -81,13 +81,13 @@ function DefaultNavbarDropdown({
           sx={{ fontWeight: "100%", ml: 1, mr: 0.25 }}
         >
           {name}
-        </ArgonTypography>
-        <ArgonTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
+        </MicroEdgeTypography>
+        <MicroEdgeTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
           <Icon sx={{ fontWeight: "normal", verticalAlign: "middle" }}>
             {collapse && "keyboard_arrow_down"}
           </Icon>
-        </ArgonTypography>
-      </ArgonBox>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
       {children && (
         <Collapse in={Boolean(collapseStatus)} timeout={400} unmountOnExit>
           {children}

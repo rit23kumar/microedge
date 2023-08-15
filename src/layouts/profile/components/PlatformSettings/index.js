@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,8 +20,8 @@ import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function PlatformSettings() {
   const [followsMe, setFollowsMe] = useState(true);
@@ -33,86 +33,86 @@ function PlatformSettings() {
 
   return (
     <Card>
-      <ArgonBox pt={2} px={2}>
-        <ArgonTypography variant="h6" fontWeight="medium" textTransform="capitalize">
+      <MicroEdgeBox pt={2} px={2}>
+        <MicroEdgeTypography variant="h6" fontWeight="medium" textTransform="capitalize">
           platform settings
-        </ArgonTypography>
-      </ArgonBox>
-      <ArgonBox pt={1.5} pb={2} px={2} lineHeight={1.25}>
-        <ArgonTypography variant="caption" fontWeight="bold" color="text" textTransform="uppercase">
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+      <MicroEdgeBox pt={1.5} pb={2} px={2} lineHeight={1.25}>
+        <MicroEdgeTypography variant="caption" fontWeight="bold" color="text" textTransform="uppercase">
           account
-        </ArgonTypography>
-        <ArgonBox display="flex" py={1} mb={0.25}>
-          <ArgonBox mt={0.25}>
+        </MicroEdgeTypography>
+        <MicroEdgeBox display="flex" py={1} mb={0.25}>
+          <MicroEdgeBox mt={0.25}>
             <Switch checked={followsMe} onChange={() => setFollowsMe(!followsMe)} />
-          </ArgonBox>
-          <ArgonBox width="80%" ml={2}>
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+          </MicroEdgeBox>
+          <MicroEdgeBox width="80%" ml={2}>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               Email me when someone follows me
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox display="flex" py={1} mb={0.25}>
-          <ArgonBox mt={0.25}>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" py={1} mb={0.25}>
+          <MicroEdgeBox mt={0.25}>
             <Switch checked={answersPost} onChange={() => setAnswersPost(!answersPost)} />
-          </ArgonBox>
-          <ArgonBox width="80%" ml={2}>
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+          </MicroEdgeBox>
+          <MicroEdgeBox width="80%" ml={2}>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               Email me when someone answers on my post
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox display="flex" py={1} mb={0.25}>
-          <ArgonBox mt={0.25}>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" py={1} mb={0.25}>
+          <MicroEdgeBox mt={0.25}>
             <Switch checked={mentionsMe} onChange={() => setMentionsMe(!mentionsMe)} />
-          </ArgonBox>
-          <ArgonBox width="80%" ml={2}>
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+          </MicroEdgeBox>
+          <MicroEdgeBox width="80%" ml={2}>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               Email me when someone mentions me
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox mt={3}>
-          <ArgonTypography
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox mt={3}>
+          <MicroEdgeTypography
             variant="caption"
             fontWeight="bold"
             color="text"
             textTransform="uppercase"
           >
             application
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox display="flex" py={1} mb={0.25}>
-          <ArgonBox mt={0.25}>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" py={1} mb={0.25}>
+          <MicroEdgeBox mt={0.25}>
             <Switch checked={newLaunches} onChange={() => setNewLaunches(!newLaunches)} />
-          </ArgonBox>
-          <ArgonBox width="80%" ml={2}>
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+          </MicroEdgeBox>
+          <MicroEdgeBox width="80%" ml={2}>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               New launches and projects
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox display="flex" py={1} mb={0.25}>
-          <ArgonBox mt={0.25}>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" py={1} mb={0.25}>
+          <MicroEdgeBox mt={0.25}>
             <Switch checked={productUpdate} onChange={() => setProductUpdate(!productUpdate)} />
-          </ArgonBox>
-          <ArgonBox width="80%" ml={2}>
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+          </MicroEdgeBox>
+          <MicroEdgeBox width="80%" ml={2}>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               Monthly product updates
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox display="flex" py={1} mb={0.25}>
-          <ArgonBox mt={0.25}>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" py={1} mb={0.25}>
+          <MicroEdgeBox mt={0.25}>
             <Switch checked={newsletter} onChange={() => setNewsletter(!newsletter)} />
-          </ArgonBox>
-          <ArgonBox width="80%" ml={2}>
-            <ArgonTypography variant="button" fontWeight="regular" color="text">
+          </MicroEdgeBox>
+          <MicroEdgeBox width="80%" ml={2}>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
               Subscribe to newsletter
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

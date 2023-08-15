@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,75 +20,75 @@ import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function TodoList() {
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { darkMode } = controller;
 
   return (
     <Card sx={{ height: "100%" }}>
-      <ArgonBox p={3}>
-        <ArgonBox display="flex" lineHeight={1}>
-          <ArgonBox mr={2}>
-            <ArgonTypography variant="h6" fontWeight="medium">
+      <MicroEdgeBox p={3}>
+        <MicroEdgeBox display="flex" lineHeight={1}>
+          <MicroEdgeBox mr={2}>
+            <MicroEdgeTypography variant="h6" fontWeight="medium">
               08:00
-            </ArgonTypography>
-          </ArgonBox>
-          <ArgonBox>
-            <ArgonTypography variant="h6" fontWeight="medium">
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+          <MicroEdgeBox>
+            <MicroEdgeTypography variant="h6" fontWeight="medium">
               Synk up with Mark
-            </ArgonTypography>
-            <ArgonTypography variant="button" fontWeight="regular" color="secondary">
+            </MicroEdgeTypography>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="secondary">
               Hangouts
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
         <Divider />
-        <ArgonBox display="flex" lineHeight={0}>
-          <ArgonBox mr={2}>
-            <ArgonTypography variant="h6" fontWeight="medium">
+        <MicroEdgeBox display="flex" lineHeight={0}>
+          <MicroEdgeBox mr={2}>
+            <MicroEdgeTypography variant="h6" fontWeight="medium">
               09:30
-            </ArgonTypography>
-          </ArgonBox>
-          <ArgonBox>
-            <ArgonTypography variant="h6" fontWeight="medium">
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+          <MicroEdgeBox>
+            <MicroEdgeTypography variant="h6" fontWeight="medium">
               Gym
-            </ArgonTypography>
-            <ArgonTypography variant="button" fontWeight="regular" color="secondary">
+            </MicroEdgeTypography>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="secondary">
               World Class
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
         <Divider />
-        <ArgonBox display="flex" lineHeight={1}>
-          <ArgonBox mr={2}>
-            <ArgonTypography variant="h6" fontWeight="medium">
+        <MicroEdgeBox display="flex" lineHeight={1}>
+          <MicroEdgeBox mr={2}>
+            <MicroEdgeTypography variant="h6" fontWeight="medium">
               11:00
-            </ArgonTypography>
-          </ArgonBox>
-          <ArgonBox>
-            <ArgonTypography variant="h6" fontWeight="medium">
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+          <MicroEdgeBox>
+            <MicroEdgeTypography variant="h6" fontWeight="medium">
               Design Review
-            </ArgonTypography>
-            <ArgonTypography variant="button" fontWeight="regular" color="secondary">
+            </MicroEdgeTypography>
+            <MicroEdgeTypography variant="button" fontWeight="regular" color="secondary">
               Zoom
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
-      <ArgonBox bgColor={darkMode ? "transparent" : "grey-100"} mt="auto">
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
+      <MicroEdgeBox bgColor={darkMode ? "transparent" : "grey-100"} mt="auto">
         <Tooltip title="Show More" placement="top" sx={{ cursor: "pointer" }}>
-          <ArgonBox textAlign="center" py={0.5} color="info" lineHeight={0}>
+          <MicroEdgeBox textAlign="center" py={0.5} color="info" lineHeight={0}>
             <Icon sx={{ fontWeight: "bold" }} color="inherit" fontSize="default">
               keyboard_arrow_down
             </Icon>
-          </ArgonBox>
+          </MicroEdgeBox>
         </Tooltip>
-      </ArgonBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

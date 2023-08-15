@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -29,9 +29,9 @@ import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonInput from "components/ArgonInput";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeInput from "components/MicroEdgeInput";
 
 // MicroEdge Suite example components
 import Breadcrumbs from "examples/Breadcrumbs";
@@ -49,7 +49,7 @@ import {
 
 // MicroEdge Suite context
 import {
-  useArgonController,
+  useMicroEdgeController,
   setTransparentNavbar,
   setMiniSidenav,
   setOpenConfigurator,
@@ -61,7 +61,7 @@ import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 
 function DashboardNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator } = controller;
   const [openMenu, setOpenMenu] = useState(false);
   const route = useLocation().pathname.split("/").slice(1);
@@ -143,7 +143,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
       sx={(theme) => navbar(theme, { transparentNavbar, absolute, light })}
     >
       <Toolbar sx={(theme) => navbarContainer(theme, { navbarType })}>
-        <ArgonBox
+        <MicroEdgeBox
           color={light && transparentNavbar ? "white" : "dark"}
           mb={{ xs: 1, md: 0 }}
           sx={(theme) => navbarRow(theme, { isMini })}
@@ -157,11 +157,11 @@ function DashboardNavbar({ absolute, light, isMini }) {
           <Icon fontSize="medium" sx={navbarDesktopMenu} onClick={handleMiniSidenav}>
             {miniSidenav ? "menu_open" : "menu"}
           </Icon>
-        </ArgonBox>
+        </MicroEdgeBox>
         {isMini ? null : (
-          <ArgonBox sx={(theme) => navbarRow(theme, { isMini })}>
-            <ArgonBox pr={1}>
-              <ArgonInput
+          <MicroEdgeBox sx={(theme) => navbarRow(theme, { isMini })}>
+            <MicroEdgeBox pr={1}>
+              <MicroEdgeInput
                 placeholder="Type here..."
                 startAdornment={
                   <Icon fontSize="small" style={{ marginRight: "6px" }}>
@@ -169,8 +169,8 @@ function DashboardNavbar({ absolute, light, isMini }) {
                   </Icon>
                 }
               />
-            </ArgonBox>
-            <ArgonBox color={light ? "white" : "inherit"}>
+            </MicroEdgeBox>
+            <MicroEdgeBox color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in/basic">
                 <IconButton sx={navbarIconButton} size="small">
                   <Icon
@@ -180,13 +180,13 @@ function DashboardNavbar({ absolute, light, isMini }) {
                   >
                     account_circle
                   </Icon>
-                  <ArgonTypography
+                  <MicroEdgeTypography
                     variant="button"
                     fontWeight="medium"
                     color={light && transparentNavbar ? "white" : "dark"}
                   >
                     Sign in
-                  </ArgonTypography>
+                  </MicroEdgeTypography>
                 </IconButton>
               </Link>
               <IconButton
@@ -217,8 +217,8 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 <Icon>notifications</Icon>
               </IconButton>
               {renderMenu()}
-            </ArgonBox>
-          </ArgonBox>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
         )}
       </Toolbar>
     </AppBar>

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -21,8 +21,8 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // Images
 import masterCardLogo from "assets/images/logos/mastercard.png";
@@ -62,47 +62,47 @@ function MasterCard({ color, number, holder, expires }) {
         boxShadow: xl,
       })}
     >
-      <ArgonBox p={2}>
-        <ArgonBox color="white" p={1} lineHeight={0} display="inline-block">
+      <MicroEdgeBox p={2}>
+        <MicroEdgeBox color="white" p={1} lineHeight={0} display="inline-block">
           <Icon fontSize="default">wifi</Icon>
-        </ArgonBox>
-        <ArgonTypography
+        </MicroEdgeBox>
+        <MicroEdgeTypography
           variant="h5"
           color="white"
           fontWeight="medium"
           sx={{ mt: 3, mb: 5, pb: 1 }}
         >
           {num1}&nbsp;&nbsp;&nbsp;{num2}&nbsp;&nbsp;&nbsp;{num3}&nbsp;&nbsp;&nbsp;{num4}
-        </ArgonTypography>
-        <ArgonBox display="flex" justifyContent="space-between" alignItems="center">
-          <ArgonBox display="flex" alignItems="center">
-            <ArgonBox mr={3} lineHeight={1}>
-              <ArgonTypography variant="button" color="white" fontWeight="regular" opacity={0.8}>
+        </MicroEdgeTypography>
+        <MicroEdgeBox display="flex" justifyContent="space-between" alignItems="center">
+          <MicroEdgeBox display="flex" alignItems="center">
+            <MicroEdgeBox mr={3} lineHeight={1}>
+              <MicroEdgeTypography variant="button" color="white" fontWeight="regular" opacity={0.8}>
                 Card Holder
-              </ArgonTypography>
-              <ArgonTypography
+              </MicroEdgeTypography>
+              <MicroEdgeTypography
                 variant="h6"
                 color="white"
                 fontWeight="medium"
                 textTransform="capitalize"
               >
                 {holder}
-              </ArgonTypography>
-            </ArgonBox>
-            <ArgonBox lineHeight={1}>
-              <ArgonTypography variant="button" color="white" fontWeight="regular" opacity={0.8}>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+            <MicroEdgeBox lineHeight={1}>
+              <MicroEdgeTypography variant="button" color="white" fontWeight="regular" opacity={0.8}>
                 Expires
-              </ArgonTypography>
-              <ArgonTypography variant="h6" color="white" fontWeight="medium">
+              </MicroEdgeTypography>
+              <MicroEdgeTypography variant="h6" color="white" fontWeight="medium">
                 {expires}
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
-          <ArgonBox display="flex" justifyContent="flex-end" width="20%">
-            <ArgonBox component="img" src={masterCardLogo} alt="master card" width="60%" mt={1} />
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
+          <MicroEdgeBox display="flex" justifyContent="flex-end" width="20%">
+            <MicroEdgeBox component="img" src={masterCardLogo} alt="master card" width="60%" mt={1} />
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

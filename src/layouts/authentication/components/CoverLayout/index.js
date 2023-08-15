@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,8 +20,8 @@ import PropTypes from "prop-types";
 import Grid from "@mui/material/Grid";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -33,19 +33,19 @@ import Footer from "layouts/authentication/components/Footer";
 function CoverLayout({ title, description, image, imgPosition, button, children }) {
   return (
     <PageLayout>
-      <ArgonBox mt={1}>
+      <MicroEdgeBox mt={1}>
         <DefaultNavbar
           action={{
             type: "external",
-            route: "https://creative-tim.com/product/argon-dashboard-material-ui",
+            route: "https://rishu.fun/product/argon-dashboard-material-ui",
             label: "Free Download",
             ...button,
           }}
           transparent
           light
         />
-      </ArgonBox>
-      <ArgonBox
+      </MicroEdgeBox>
+      <MicroEdgeBox
         width="calc(100% - 2rem)"
         minHeight="50vh"
         borderRadius="lg"
@@ -68,26 +68,26 @@ function CoverLayout({ title, description, image, imgPosition, button, children 
       >
         <Grid container spacing={3} justifyContent="center" sx={{ textAlign: "center" }}>
           <Grid item xs={10} lg={4}>
-            <ArgonBox mb={1}>
-              <ArgonTypography variant="h1" color="white" fontWeight="bold">
+            <MicroEdgeBox mb={1}>
+              <MicroEdgeTypography variant="h1" color="white" fontWeight="bold">
                 {title}
-              </ArgonTypography>
-            </ArgonBox>
-            <ArgonBox mb={2}>
-              <ArgonTypography variant="body2" color="white" fontWeight="regular">
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+            <MicroEdgeBox mb={2}>
+              <MicroEdgeTypography variant="body2" color="white" fontWeight="regular">
                 {description}
-              </ArgonTypography>
-            </ArgonBox>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
           </Grid>
         </Grid>
-      </ArgonBox>
-      <ArgonBox mt={{ xs: -26, lg: -24 }} px={1} width="calc(100% - 2rem)" mx="auto">
+      </MicroEdgeBox>
+      <MicroEdgeBox mt={{ xs: -26, lg: -24 }} px={1} width="calc(100% - 2rem)" mx="auto">
         <Grid container justifyContent="center">
           <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
             {children}
           </Grid>
         </Grid>
-      </ArgonBox>
+      </MicroEdgeBox>
       <Footer />
     </PageLayout>
   );

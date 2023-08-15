@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -17,8 +17,8 @@ Coded by www.creative-tim.com
 import Card from "@mui/material/Card";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -37,13 +37,13 @@ function Tables() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <ArgonBox py={3}>
-        <ArgonBox mb={3}>
+      <MicroEdgeBox py={3}>
+        <MicroEdgeBox mb={3}>
           <Card>
-            <ArgonBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-              <ArgonTypography variant="h6">Authors table</ArgonTypography>
-            </ArgonBox>
-            <ArgonBox
+            <MicroEdgeBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+              <MicroEdgeTypography variant="h6">Authors table</MicroEdgeTypography>
+            </MicroEdgeBox>
+            <MicroEdgeBox
               sx={{
                 "& .MuiTableRow-root:not(:last-child)": {
                   "& td": {
@@ -54,14 +54,14 @@ function Tables() {
               }}
             >
               <Table columns={columns} rows={rows} />
-            </ArgonBox>
+            </MicroEdgeBox>
           </Card>
-        </ArgonBox>
+        </MicroEdgeBox>
         <Card>
-          <ArgonBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-            <ArgonTypography variant="h6">Projects table</ArgonTypography>
-          </ArgonBox>
-          <ArgonBox
+          <MicroEdgeBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
+            <MicroEdgeTypography variant="h6">Projects table</MicroEdgeTypography>
+          </MicroEdgeBox>
+          <MicroEdgeBox
             sx={{
               "& .MuiTableRow-root:not(:last-child)": {
                 "& td": {
@@ -72,9 +72,9 @@ function Tables() {
             }}
           >
             <Table columns={prCols} rows={prRows} />
-          </ArgonBox>
+          </MicroEdgeBox>
         </Card>
-      </ArgonBox>
+      </MicroEdgeBox>
       <Footer />
     </DashboardLayout>
   );

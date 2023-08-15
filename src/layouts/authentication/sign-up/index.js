@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -21,10 +21,10 @@ import Card from "@mui/material/Card";
 import Checkbox from "@mui/material/Checkbox";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonInput from "components/ArgonInput";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeInput from "components/MicroEdgeInput";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // Authentication layout components
 import CoverLayout from "layouts/authentication/components/CoverLayout";
@@ -45,38 +45,38 @@ function Cover() {
       button={{ color: "dark", variant: "gradient" }}
     >
       <Card>
-        <ArgonBox p={3} mb={1} textAlign="center">
-          <ArgonTypography variant="h5" fontWeight="medium">
+        <MicroEdgeBox p={3} mb={1} textAlign="center">
+          <MicroEdgeTypography variant="h5" fontWeight="medium">
             Register with
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox mb={2}>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeBox mb={2}>
           <Socials />
-        </ArgonBox>
-        <ArgonBox px={12}>
+        </MicroEdgeBox>
+        <MicroEdgeBox px={12}>
           <Separator />
-        </ArgonBox>
-        <ArgonBox pt={2} pb={3} px={3}>
-          <ArgonBox component="form" role="form">
-            <ArgonBox mb={2}>
-              <ArgonInput placeholder="Name" />
-            </ArgonBox>
-            <ArgonBox mb={2}>
-              <ArgonInput type="email" placeholder="Email" />
-            </ArgonBox>
-            <ArgonBox mb={2}>
-              <ArgonInput type="password" placeholder="Password" />
-            </ArgonBox>
-            <ArgonBox display="flex" alignItems="center">
+        </MicroEdgeBox>
+        <MicroEdgeBox pt={2} pb={3} px={3}>
+          <MicroEdgeBox component="form" role="form">
+            <MicroEdgeBox mb={2}>
+              <MicroEdgeInput placeholder="Name" />
+            </MicroEdgeBox>
+            <MicroEdgeBox mb={2}>
+              <MicroEdgeInput type="email" placeholder="Email" />
+            </MicroEdgeBox>
+            <MicroEdgeBox mb={2}>
+              <MicroEdgeInput type="password" placeholder="Password" />
+            </MicroEdgeBox>
+            <MicroEdgeBox display="flex" alignItems="center">
               <Checkbox defaultChecked />
-              <ArgonTypography
+              <MicroEdgeTypography
                 variant="button"
                 fontWeight="regular"
                 sx={{ cursor: "pointer", userSelect: "none" }}
               >
                 &nbsp;&nbsp;I agree the&nbsp;
-              </ArgonTypography>
-              <ArgonTypography
+              </MicroEdgeTypography>
+              <MicroEdgeTypography
                 component="a"
                 href="#"
                 variant="button"
@@ -84,17 +84,17 @@ function Cover() {
                 textGradient
               >
                 Terms and Conditions
-              </ArgonTypography>
-            </ArgonBox>
-            <ArgonBox mt={4} mb={1}>
-              <ArgonButton variant="gradient" color="dark" fullWidth>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+            <MicroEdgeBox mt={4} mb={1}>
+              <MicroEdgeButton variant="gradient" color="dark" fullWidth>
                 sign up
-              </ArgonButton>
-            </ArgonBox>
-            <ArgonBox mt={2}>
-              <ArgonTypography variant="button" color="text" fontWeight="regular">
+              </MicroEdgeButton>
+            </MicroEdgeBox>
+            <MicroEdgeBox mt={2}>
+              <MicroEdgeTypography variant="button" color="text" fontWeight="regular">
                 Already have an account?&nbsp;
-                <ArgonTypography
+                <MicroEdgeTypography
                   component={Link}
                   to="/authentication/sign-in"
                   variant="button"
@@ -103,11 +103,11 @@ function Cover() {
                   textGradient
                 >
                   Sign in
-                </ArgonTypography>
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
-        </ArgonBox>
+                </MicroEdgeTypography>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
       </Card>
     </CoverLayout>
   );

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -22,14 +22,14 @@ import Divider from "@mui/material/Divider";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function DefaultInfoCard({ color, icon, title, description, value }) {
   return (
     <Card>
-      <ArgonBox p={2} mx={3} display="flex" justifyContent="center">
-        <ArgonBox
+      <MicroEdgeBox p={2} mx={3} display="flex" justifyContent="center">
+        <MicroEdgeBox
           display="grid"
           justifyContent="center"
           alignItems="center"
@@ -42,24 +42,24 @@ function DefaultInfoCard({ color, icon, title, description, value }) {
           variant="gradient"
         >
           <Icon fontSize="default">{icon}</Icon>
-        </ArgonBox>
-      </ArgonBox>
-      <ArgonBox pb={2} px={2} textAlign="center" lineHeight={1.25}>
-        <ArgonTypography variant="h6" fontWeight="medium" textTransform="capitalize">
+        </MicroEdgeBox>
+      </MicroEdgeBox>
+      <MicroEdgeBox pb={2} px={2} textAlign="center" lineHeight={1.25}>
+        <MicroEdgeTypography variant="h6" fontWeight="medium" textTransform="capitalize">
           {title}
-        </ArgonTypography>
+        </MicroEdgeTypography>
         {description && (
-          <ArgonTypography variant="caption" color="text" fontWeight="regular">
+          <MicroEdgeTypography variant="caption" color="text" fontWeight="regular">
             {description}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         )}
         {description && !value ? null : <Divider />}
         {value && (
-          <ArgonTypography variant="h5" fontWeight="medium">
+          <MicroEdgeTypography variant="h5" fontWeight="medium">
             {value}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         )}
-      </ArgonBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

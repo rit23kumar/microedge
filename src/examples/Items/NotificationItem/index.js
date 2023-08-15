@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -23,15 +23,15 @@ import MenuItem from "@mui/material/MenuItem";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // custom styles for the NotificationItem
 import { menuItem, menuImage } from "examples/Items/NotificationItem/styles";
 
 const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref) => (
   <MenuItem {...rest} ref={ref} sx={(theme) => menuItem(theme)}>
-    <ArgonBox
+    <MicroEdgeBox
       width="2.25rem"
       height="2.25rem"
       mt={0.25}
@@ -41,12 +41,12 @@ const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref
       sx={(theme) => menuImage(theme, { color })}
     >
       {image}
-    </ArgonBox>
-    <ArgonBox>
-      <ArgonTypography variant="button" textTransform="capitalize" fontWeight="regular">
+    </MicroEdgeBox>
+    <MicroEdgeBox>
+      <MicroEdgeTypography variant="button" textTransform="capitalize" fontWeight="regular">
         <strong>{title[0]}</strong> {title[1]}
-      </ArgonTypography>
-      <ArgonTypography
+      </MicroEdgeTypography>
+      <MicroEdgeTypography
         variant="caption"
         color="secondary"
         sx={{
@@ -55,7 +55,7 @@ const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref
           mt: 0.5,
         }}
       >
-        <ArgonTypography variant="button" color="secondary">
+        <MicroEdgeTypography variant="button" color="secondary">
           <Icon
             sx={{
               lineHeight: 1.2,
@@ -64,10 +64,10 @@ const NotificationItem = forwardRef(({ color, image, title, date, ...rest }, ref
           >
             watch_later
           </Icon>
-        </ArgonTypography>
+        </MicroEdgeTypography>
         {date}
-      </ArgonTypography>
-    </ArgonBox>
+      </MicroEdgeTypography>
+    </MicroEdgeBox>
   </MenuItem>
 ));
 

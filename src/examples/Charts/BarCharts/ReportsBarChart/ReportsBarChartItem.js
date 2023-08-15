@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -23,17 +23,17 @@ import Icon from "@mui/material/Icon";
 import typography from "assets/theme/base/typography";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonProgress from "components/ArgonProgress";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeProgress from "components/MicroEdgeProgress";
 
 function ReportsBarChartItem({ color, icon, label, progress }) {
   const { size } = typography;
 
   return (
-    <ArgonBox width="100%">
-      <ArgonBox display="flex" alignItems="center" mb={2}>
-        <ArgonBox
+    <MicroEdgeBox width="100%">
+      <MicroEdgeBox display="flex" alignItems="center" mb={2}>
+        <MicroEdgeBox
           bgColor={icon.color}
           width="1.25rem"
           height="1.25rem"
@@ -48,25 +48,25 @@ function ReportsBarChartItem({ color, icon, label, progress }) {
           variant="gradient"
         >
           <Icon>{icon.component}</Icon>
-        </ArgonBox>
-        <ArgonTypography
+        </MicroEdgeBox>
+        <MicroEdgeTypography
           variant="caption"
           textTransform="capitalize"
           fontWeight="medium"
           color="text"
         >
           {label}
-        </ArgonTypography>
-      </ArgonBox>
-      <ArgonBox mt={1}>
-        <ArgonTypography variant="h4" fontWeight="bold" color={color}>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+      <MicroEdgeBox mt={1}>
+        <MicroEdgeTypography variant="h4" fontWeight="bold" color={color}>
           {progress.content}
-        </ArgonTypography>
-        <ArgonBox width="75%" mt={0.5}>
-          <ArgonProgress value={progress.percentage} color={color} />
-        </ArgonBox>
-      </ArgonBox>
-    </ArgonBox>
+        </MicroEdgeTypography>
+        <MicroEdgeBox width="75%" mt={0.5}>
+          <MicroEdgeProgress value={progress.percentage} color={color} />
+        </MicroEdgeBox>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 

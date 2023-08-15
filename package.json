@@ -1,9 +1,9 @@
 {
   "name": "argon-dashboard-mui",
   "version": "3.0.1",
-  "author": "Creative Tim",
-  "license": "SEE LICENSE IN <https://www.creative-tim.com/license>",
-  "description": "React version of MicroEdge Suite by Creative Tim",
+  "author": "MicroEdge",
+  "license": "SEE LICENSE IN <https://www.rishu.fun/license>",
+  "description": "React version of MicroEdge Suite by MicroEdge",
   "bugs": {
     "url": "https://github.com/creativetimofficial/argon-dashboard-material-ui/issues"
   },

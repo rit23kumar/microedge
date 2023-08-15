@@ -3,9 +3,9 @@
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonProgress from "components/ArgonProgress";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeProgress from "components/MicroEdgeProgress";
 
 // Images
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
@@ -17,14 +17,14 @@ import logoXD from "assets/images/small-logos/logo-xd.svg";
 
 function Completion({ value, color }) {
   return (
-    <ArgonBox display="flex" alignItems="center">
-      <ArgonTypography variant="caption" color="text" fontWeight="medium">
+    <MicroEdgeBox display="flex" alignItems="center">
+      <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
         {value}%&nbsp;
-      </ArgonTypography>
-      <ArgonBox width="8rem">
-        <ArgonProgress value={value} color={color} variant="gradient" label={false} />
-      </ArgonBox>
-    </ArgonBox>
+      </MicroEdgeTypography>
+      <MicroEdgeBox width="8rem">
+        <MicroEdgeProgress value={value} color={color} variant="gradient" label={false} />
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 
@@ -47,14 +47,14 @@ const projectsTableData = {
     {
       project: [logoSpotify, "Spotift"],
       budget: (
-        <ArgonTypography variant="button" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
           $2,500
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       status: (
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           working
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       completion: <Completion value={60} color="info" />,
       action,
@@ -62,14 +62,14 @@ const projectsTableData = {
     {
       project: [logoInvesion, "Invesion"],
       budget: (
-        <ArgonTypography variant="button" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
           $5,000
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       status: (
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           done
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       completion: <Completion value={100} color="success" />,
       action,
@@ -77,14 +77,14 @@ const projectsTableData = {
     {
       project: [logoJira, "Jira"],
       budget: (
-        <ArgonTypography variant="button" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
           $3,400
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       status: (
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           canceled
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       completion: <Completion value={30} color="error" />,
       action,
@@ -92,14 +92,14 @@ const projectsTableData = {
     {
       project: [logoSlack, "Slack"],
       budget: (
-        <ArgonTypography variant="button" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
           $1,400
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       status: (
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           canceled
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       completion: <Completion value={0} color="error" />,
       action,
@@ -107,14 +107,14 @@ const projectsTableData = {
     {
       project: [logoWebDev, "Webdev"],
       budget: (
-        <ArgonTypography variant="button" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
           $14,000
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       status: (
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           working
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       completion: <Completion value={80} color="info" />,
       action,
@@ -122,14 +122,14 @@ const projectsTableData = {
     {
       project: [logoXD, "Adobe XD"],
       budget: (
-        <ArgonTypography variant="button" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
           $2,300
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       status: (
-        <ArgonTypography variant="caption" color="text" fontWeight="medium">
+        <MicroEdgeTypography variant="caption" color="text" fontWeight="medium">
           done
-        </ArgonTypography>
+        </MicroEdgeTypography>
       ),
       completion: <Completion value={100} color="success" />,
       action,

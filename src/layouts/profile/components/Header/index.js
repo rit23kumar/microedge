@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -23,9 +23,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonAvatar from "components/ArgonAvatar";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeAvatar from "components/MicroEdgeAvatar";
 
 // MicroEdge Suite example components
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
@@ -63,9 +63,9 @@ function Header() {
   const handleSetTabValue = (event, newValue) => setTabValue(newValue);
 
   return (
-    <ArgonBox position="relative">
+    <MicroEdgeBox position="relative">
       <DashboardNavbar absolute light />
-      <ArgonBox height="220px" />
+      <MicroEdgeBox height="220px" />
       <Card
         sx={{
           py: 2,
@@ -75,7 +75,7 @@ function Header() {
       >
         <Grid container spacing={3} alignItems="center">
           <Grid item>
-            <ArgonAvatar
+            <MicroEdgeAvatar
               src={burceMars}
               alt="profile-image"
               variant="rounded"
@@ -84,14 +84,14 @@ function Header() {
             />
           </Grid>
           <Grid item>
-            <ArgonBox height="100%" mt={0.5} lineHeight={1}>
-              <ArgonTypography variant="h5" fontWeight="medium">
+            <MicroEdgeBox height="100%" mt={0.5} lineHeight={1}>
+              <MicroEdgeTypography variant="h5" fontWeight="medium">
                 Alex Thompson
-              </ArgonTypography>
-              <ArgonTypography variant="button" color="text" fontWeight="medium">
+              </MicroEdgeTypography>
+              <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
                 CEO / Co-Founder
-              </ArgonTypography>
-            </ArgonBox>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
           </Grid>
           <Grid item xs={12} md={6} lg={4} sx={{ ml: "auto" }}>
             <AppBar position="static">
@@ -125,7 +125,7 @@ function Header() {
           </Grid>
         </Grid>
       </Card>
-    </ArgonBox>
+    </MicroEdgeBox>
   );
 }
 

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -28,8 +28,8 @@ import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite example components
 import SidenavItem from "examples/Sidenav/SidenavItem";
@@ -40,10 +40,10 @@ import SidenavRoot from "examples/Sidenav/SidenavRoot";
 import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
 
 // MicroEdge Suite context
-import { useArgonController, setMiniSidenav } from "context";
+import { useMicroEdgeController, setMiniSidenav } from "context";
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { miniSidenav, darkSidenav, layout } = controller;
   const location = useLocation();
   const { pathname } = location;
@@ -94,7 +94,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       }
     } else if (type === "title") {
       returnValue = (
-        <ArgonTypography
+        <MicroEdgeTypography
           key={key}
           color={darkSidenav ? "white" : "dark"}
           display="block"
@@ -108,7 +108,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           ml={1}
         >
           {title}
-        </ArgonTypography>
+        </MicroEdgeTypography>
       );
     } else if (type === "divider") {
       returnValue = <Divider key={key} light={darkSidenav} />;
@@ -119,8 +119,8 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
 
   return (
     <SidenavRoot {...rest} variant="permanent" ownerState={{ darkSidenav, miniSidenav, layout }}>
-      <ArgonBox pt={3} pb={1} px={4} textAlign="center">
-        <ArgonBox
+      <MicroEdgeBox pt={3} pb={1} px={4} textAlign="center">
+        <MicroEdgeBox
           display={{ xs: "block", xl: "none" }}
           position="absolute"
           top={0}
@@ -129,35 +129,35 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           onClick={closeSidenav}
           sx={{ cursor: "pointer" }}
         >
-          <ArgonTypography variant="h6" color="secondary">
+          <MicroEdgeTypography variant="h6" color="secondary">
             <Icon sx={{ fontWeight: "bold" }}>close</Icon>
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox component={NavLink} to="/" display="flex" alignItems="center">
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeBox component={NavLink} to="/" display="flex" alignItems="center">
           {brand && (
-            <ArgonBox component="img" src={brand} alt="Argon Logo" width="2rem" mr={0.25} />
+            <MicroEdgeBox component="img" src={brand} alt="MicroEdge Logo" width="2rem" mr={0.25} />
           )}
-          <ArgonBox
+          <MicroEdgeBox
             width={!brandName && "100%"}
             sx={(theme) => sidenavLogoLabel(theme, { miniSidenav })}
           >
-            <ArgonTypography
+            <MicroEdgeTypography
               component="h6"
               variant="button"
               fontWeight="medium"
               color={darkSidenav ? "white" : "dark"}
             >
               {brandName}
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
       <Divider light={darkSidenav} />
       <List>{renderRoutes}</List>
 
-      <ArgonBox pt={1} mt="auto" mb={2} mx={2}>
+      <MicroEdgeBox pt={1} mt="auto" mb={2} mx={2}>
         <SidenavFooter />
-      </ArgonBox>
+      </MicroEdgeBox>
     </SidenavRoot>
   );
 }

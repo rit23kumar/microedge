@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -14,13 +14,13 @@ Coded by www.creative-tim.com
 */
 
 // MicroEdge Suite components
-import ArgonButton from "components/ArgonButton";
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeButton from "components/MicroEdgeButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 function Socials() {
   return (
-    <ArgonBox display="flex" justifyContent="center">
-      <ArgonButton variant="outlined" color="light">
+    <MicroEdgeBox display="flex" justifyContent="center">
+      <MicroEdgeButton variant="outlined" color="light">
         <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1">
           <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g transform="translate(3.000000, 3.000000)" fillRule="nonzero">
@@ -32,9 +32,9 @@ function Socials() {
             </g>
           </g>
         </svg>
-      </ArgonButton>
-      <ArgonBox px={1}>
-        <ArgonButton variant="outlined" color="light">
+      </MicroEdgeButton>
+      <MicroEdgeBox px={1}>
+        <MicroEdgeButton variant="outlined" color="light">
           <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1">
             <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <g transform="translate(7.000000, 0.564551)" fill="#000000" fillRule="nonzero">
@@ -42,9 +42,9 @@ function Socials() {
               </g>
             </g>
           </svg>
-        </ArgonButton>
-      </ArgonBox>
-      <ArgonButton variant="outlined" color="light">
+        </MicroEdgeButton>
+      </MicroEdgeBox>
+      <MicroEdgeButton variant="outlined" color="light">
         <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1">
           <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g transform="translate(3.000000, 2.000000)" fillRule="nonzero">
@@ -67,8 +67,8 @@ function Socials() {
             </g>
           </g>
         </svg>
-      </ArgonButton>
-    </ArgonBox>
+      </MicroEdgeButton>
+    </MicroEdgeBox>
   );
 }
 

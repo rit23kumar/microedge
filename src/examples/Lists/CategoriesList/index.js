@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,12 +24,12 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function CategoriesList({ title, categories }) {
   const renderItems = categories.map(({ color, icon, name, description, route }, key) => (
-    <ArgonBox
+    <MicroEdgeBox
       key={name}
       component="li"
       display="flex"
@@ -40,8 +40,8 @@ function CategoriesList({ title, categories }) {
       pr={2}
       mb={categories.length - 1 === key ? 0 : 1}
     >
-      <ArgonBox display="flex" alignItems="center">
-        <ArgonBox
+      <MicroEdgeBox display="flex" alignItems="center">
+        <MicroEdgeBox
           display="grid"
           alignItems="center"
           justifyContent="center"
@@ -62,18 +62,18 @@ function CategoriesList({ title, categories }) {
           >
             {icon}
           </Icon>
-        </ArgonBox>
-        <ArgonBox display="flex" flexDirection="column">
-          <ArgonTypography variant="button" color={color} fontWeight="medium" gutterBottom>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" flexDirection="column">
+          <MicroEdgeTypography variant="button" color={color} fontWeight="medium" gutterBottom>
             {name}
-          </ArgonTypography>
-          <ArgonTypography variant="caption" color="text">
+          </MicroEdgeTypography>
+          <MicroEdgeTypography variant="caption" color="text">
             {description}
-          </ArgonTypography>
-        </ArgonBox>
-      </ArgonBox>
-      <ArgonBox display="flex">
-        <ArgonTypography
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
+      <MicroEdgeBox display="flex">
+        <MicroEdgeTypography
           component={Link}
           variant="button"
           color={color}
@@ -89,23 +89,23 @@ function CategoriesList({ title, categories }) {
           }}
         >
           <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon>
-        </ArgonTypography>
-      </ArgonBox>
-    </ArgonBox>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   ));
 
   return (
     <Card>
-      <ArgonBox pt={2} px={2}>
-        <ArgonTypography variant="h6" fontWeight="medium" textTransform="capitalize">
+      <MicroEdgeBox pt={2} px={2}>
+        <MicroEdgeTypography variant="h6" fontWeight="medium" textTransform="capitalize">
           {title}
-        </ArgonTypography>
-      </ArgonBox>
-      <ArgonBox p={2}>
-        <ArgonBox component="ul" display="flex" flexDirection="column" p={0} m={0}>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+      <MicroEdgeBox p={2}>
+        <MicroEdgeBox component="ul" display="flex" flexDirection="column" p={0} m={0}>
           {renderItems}
-        </ArgonBox>
-      </ArgonBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -22,13 +22,13 @@ import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // MicroEdge Suite context
-import { useArgonController, setLayout } from "context";
+import { useMicroEdgeController, setLayout } from "context";
 
 function PageLayout({ background, children }) {
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { darkMode } = controller;
 
   const { pathname } = useLocation();
@@ -38,7 +38,7 @@ function PageLayout({ background, children }) {
   }, [pathname]);
 
   return (
-    <ArgonBox
+    <MicroEdgeBox
       width="100vw"
       height="100%"
       minHeight="100vh"
@@ -46,7 +46,7 @@ function PageLayout({ background, children }) {
       sx={{ overflowX: "hidden" }}
     >
       {children}
-    </ArgonBox>
+    </MicroEdgeBox>
   );
 }
 

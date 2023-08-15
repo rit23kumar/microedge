@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -44,7 +44,7 @@ import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 const routes = [
   {
@@ -52,7 +52,7 @@ const routes = [
     name: "Dashboard",
     key: "dashboard",
     route: "/dashboard",
-    icon: <ArgonBox component="i" color="primary" fontSize="14px" className="ni ni-tv-2" />,
+    icon: <MicroEdgeBox component="i" color="primary" fontSize="14px" className="ni ni-tv-2" />,
     component: <Dashboard />,
   },
   {
@@ -61,7 +61,7 @@ const routes = [
     key: "tables",
     route: "/tables",
     icon: (
-      <ArgonBox component="i" color="warning" fontSize="14px" className="ni ni-calendar-grid-58" />
+      <MicroEdgeBox component="i" color="warning" fontSize="14px" className="ni ni-calendar-grid-58" />
     ),
     component: <Tables />,
   },
@@ -70,7 +70,7 @@ const routes = [
     name: "Billing",
     key: "billing",
     route: "/billing",
-    icon: <ArgonBox component="i" color="success" fontSize="14px" className="ni ni-credit-card" />,
+    icon: <MicroEdgeBox component="i" color="success" fontSize="14px" className="ni ni-credit-card" />,
     component: <Billing />,
   },
   {
@@ -78,7 +78,7 @@ const routes = [
     name: "Virtual Reality",
     key: "virtual-reality",
     route: "/virtual-reality",
-    icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-app" />,
+    icon: <MicroEdgeBox component="i" color="info" fontSize="14px" className="ni ni-app" />,
     component: <VirtualReality />,
   },
   {
@@ -86,7 +86,7 @@ const routes = [
     name: "RTL",
     key: "rtl",
     route: "/rtl",
-    icon: <ArgonBox component="i" color="error" fontSize="14px" className="ni ni-world-2" />,
+    icon: <MicroEdgeBox component="i" color="error" fontSize="14px" className="ni ni-world-2" />,
     component: <RTL />,
   },
   { type: "title", title: "Account", key: "account-pages" },
@@ -95,7 +95,7 @@ const routes = [
     name: "Profile",
     key: "profile",
     route: "/profile",
-    icon: <ArgonBox component="i" color="dark" fontSize="14px" className="ni ni-single-02" />,
+    icon: <MicroEdgeBox component="i" color="dark" fontSize="14px" className="ni ni-single-02" />,
     component: <Profile />,
   },
   {
@@ -104,7 +104,7 @@ const routes = [
     key: "sign-in",
     route: "/authentication/sign-in",
     icon: (
-      <ArgonBox component="i" color="warning" fontSize="14px" className="ni ni-single-copy-04" />
+      <MicroEdgeBox component="i" color="warning" fontSize="14px" className="ni ni-single-copy-04" />
     ),
     component: <SignIn />,
   },
@@ -113,7 +113,7 @@ const routes = [
     name: "Sign Up",
     key: "sign-up",
     route: "/authentication/sign-up",
-    icon: <ArgonBox component="i" color="info" fontSize="14px" className="ni ni-collection" />,
+    icon: <MicroEdgeBox component="i" color="info" fontSize="14px" className="ni ni-collection" />,
     component: <SignUp />,
   },
 ];

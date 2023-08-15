@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -22,7 +22,7 @@ import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // MicroEdge Suite example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -31,7 +31,7 @@ import Footer from "examples/Footer";
 import Sidenav from "examples/Sidenav";
 
 // MicroEdge Suite context
-import { useArgonController, setMiniSidenav, setLayout, setDarkSidenav } from "context";
+import { useMicroEdgeController, setMiniSidenav, setLayout, setDarkSidenav } from "context";
 
 // MicroEdge Suite routes
 import routes from "routes";
@@ -48,7 +48,7 @@ import brand from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
 
 function BaseLayout({ children }) {
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { miniSidenav, sidenavColor, darkSidenav, darkMode } = controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
   const { pathname } = useLocation();
@@ -76,12 +76,12 @@ function BaseLayout({ children }) {
   }, [pathname]);
 
   return (
-    <ArgonBox sx={baseLayout}>
-      <ArgonBox bgColor={darkMode ? "transparent" : "info"} borderRadius="xl" mt={3} mx={3}>
+    <MicroEdgeBox sx={baseLayout}>
+      <MicroEdgeBox bgColor={darkMode ? "transparent" : "info"} borderRadius="xl" mt={3} mx={3}>
         <DashboardNavbar />
-      </ArgonBox>
-      <ArgonBox sx={baseLayoutBackground}>
-        <ArgonBox display={{ xs: "block", lg: "none" }}>
+      </MicroEdgeBox>
+      <MicroEdgeBox sx={baseLayoutBackground}>
+        <MicroEdgeBox display={{ xs: "block", lg: "none" }}>
           <Sidenav
             color={sidenavColor}
             brand={darkSidenav || darkMode ? brand : brandDark}
@@ -90,9 +90,9 @@ function BaseLayout({ children }) {
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
           />
-        </ArgonBox>
-        <ArgonBox sx={baseLayoutContent}>
-          <ArgonBox display={{ xs: "none", lg: "block" }}>
+        </MicroEdgeBox>
+        <MicroEdgeBox sx={baseLayoutContent}>
+          <MicroEdgeBox display={{ xs: "none", lg: "block" }}>
             <Sidenav
               color={sidenavColor}
               brand={darkSidenav || darkMode ? brand : brandDark}
@@ -101,14 +101,14 @@ function BaseLayout({ children }) {
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
             />
-          </ArgonBox>
+          </MicroEdgeBox>
           <DashboardLayout bgColor="transparent">{children}</DashboardLayout>
-        </ArgonBox>
-      </ArgonBox>
-      <ArgonBox pb={2} pt={0.25}>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
+      <MicroEdgeBox pb={2} pt={0.25}>
         <Footer />
-      </ArgonBox>
-    </ArgonBox>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 

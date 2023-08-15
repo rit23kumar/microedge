@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,7 +24,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // MicroEdge Suite example components
 import Sidenav from "examples/Sidenav";
@@ -45,7 +45,7 @@ import createCache from "@emotion/cache";
 import routes from "routes";
 
 // MicroEdge Suite contexts
-import { useArgonController, setMiniSidenav, setOpenConfigurator } from "context";
+import { useMicroEdgeController, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Images
 import brand from "assets/images/logo-ct.png";
@@ -56,7 +56,7 @@ import "assets/css/nucleo-icons.css";
 import "assets/css/nucleo-svg.css";
 
 export default function App() {
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { miniSidenav, direction, layout, openConfigurator, sidenavColor, darkSidenav, darkMode } =
     controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
@@ -117,7 +117,7 @@ export default function App() {
     });
 
   const configsButton = (
-    <ArgonBox
+    <MicroEdgeBox
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -137,7 +137,7 @@ export default function App() {
       <Icon fontSize="default" color="inherit">
         settings
       </Icon>
-    </ArgonBox>
+    </MicroEdgeBox>
   );
 
   return direction === "rtl" ? (

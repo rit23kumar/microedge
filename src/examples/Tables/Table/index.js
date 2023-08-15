@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -28,9 +28,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonAvatar from "components/ArgonAvatar";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeAvatar from "components/MicroEdgeAvatar";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite base styles
 import typography from "assets/theme/base/typography";
@@ -56,7 +56,7 @@ function Table({ columns, rows }) {
     }
 
     return (
-      <ArgonBox
+      <MicroEdgeBox
         key={name}
         component="th"
         width={width || "auto"}
@@ -72,7 +72,7 @@ function Table({ columns, rows }) {
         sx={({ palette: { light } }) => ({ borderBottom: `${borderWidth[1]} solid ${light.main}` })}
       >
         {name.toUpperCase()}
-      </ArgonBox>
+      </MicroEdgeBox>
     );
   });
 
@@ -84,7 +84,7 @@ function Table({ columns, rows }) {
 
       if (Array.isArray(row[name])) {
         template = (
-          <ArgonBox
+          <MicroEdgeBox
             key={uuidv4()}
             component="td"
             p={1}
@@ -92,19 +92,19 @@ function Table({ columns, rows }) {
               borderBottom: row.hasBorder ? `${borderWidth[1]} solid ${light.main}` : null,
             })}
           >
-            <ArgonBox display="flex" alignItems="center" py={0.5} px={1}>
-              <ArgonBox mr={2}>
-                <ArgonAvatar src={row[name][0]} name={row[name][1]} variant="rounded" size="sm" />
-              </ArgonBox>
-              <ArgonTypography variant="button" fontWeight="medium" sx={{ width: "max-content" }}>
+            <MicroEdgeBox display="flex" alignItems="center" py={0.5} px={1}>
+              <MicroEdgeBox mr={2}>
+                <MicroEdgeAvatar src={row[name][0]} name={row[name][1]} variant="rounded" size="sm" />
+              </MicroEdgeBox>
+              <MicroEdgeTypography variant="button" fontWeight="medium" sx={{ width: "max-content" }}>
                 {row[name][1]}
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
         );
       } else {
         template = (
-          <ArgonBox
+          <MicroEdgeBox
             key={uuidv4()}
             component="td"
             p={1}
@@ -115,15 +115,15 @@ function Table({ columns, rows }) {
               borderBottom: row.hasBorder ? `${borderWidth[1]} solid ${light.main}` : null,
             })}
           >
-            <ArgonTypography
+            <MicroEdgeTypography
               variant="button"
               fontWeight="regular"
               color="secondary"
               sx={{ display: "inline-block", width: "max-content" }}
             >
               {row[name]}
-            </ArgonTypography>
-          </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
         );
       }
 
@@ -137,9 +137,9 @@ function Table({ columns, rows }) {
     () => (
       <TableContainer>
         <MuiTable>
-          <ArgonBox component="thead">
+          <MicroEdgeBox component="thead">
             <TableRow>{renderColumns}</TableRow>
-          </ArgonBox>
+          </MicroEdgeBox>
           <TableBody>{renderRows}</TableBody>
         </MuiTable>
       </TableContainer>

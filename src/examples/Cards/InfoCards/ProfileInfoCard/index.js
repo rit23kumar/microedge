@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -26,8 +26,8 @@ import Tooltip from "@mui/material/Tooltip";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite base styles
 import colors from "assets/theme/base/colors";
@@ -56,19 +56,19 @@ function ProfileInfoCard({ title, description, info, social, action }) {
 
   // Render the card info items
   const renderItems = labels.map((label, key) => (
-    <ArgonBox key={label} display="flex" py={1} pr={2}>
-      <ArgonTypography variant="button" fontWeight="bold" textTransform="capitalize">
+    <MicroEdgeBox key={label} display="flex" py={1} pr={2}>
+      <MicroEdgeTypography variant="button" fontWeight="bold" textTransform="capitalize">
         {label}: &nbsp;
-      </ArgonTypography>
-      <ArgonTypography variant="button" fontWeight="regular" color="text">
+      </MicroEdgeTypography>
+      <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
         &nbsp;{values[key]}
-      </ArgonTypography>
-    </ArgonBox>
+      </MicroEdgeTypography>
+    </MicroEdgeBox>
   ));
 
   // Render the card social media icons
   const renderSocial = social.map(({ link, icon, color }) => (
-    <ArgonBox
+    <MicroEdgeBox
       key={color}
       component="a"
       href={link}
@@ -81,40 +81,40 @@ function ProfileInfoCard({ title, description, info, social, action }) {
       lineHeight={1}
     >
       {icon}
-    </ArgonBox>
+    </MicroEdgeBox>
   ));
 
   return (
     <Card sx={{ height: "100%" }}>
-      <ArgonBox display="flex" justifyContent="space-between" alignItems="center" pt={2} px={2}>
-        <ArgonTypography variant="h6" fontWeight="medium" textTransform="capitalize">
+      <MicroEdgeBox display="flex" justifyContent="space-between" alignItems="center" pt={2} px={2}>
+        <MicroEdgeTypography variant="h6" fontWeight="medium" textTransform="capitalize">
           {title}
-        </ArgonTypography>
-        <ArgonTypography component={Link} to={action.route} variant="body2" color="secondary">
+        </MicroEdgeTypography>
+        <MicroEdgeTypography component={Link} to={action.route} variant="body2" color="secondary">
           <Tooltip title={action.tooltip} placement="top">
             <Icon>edit</Icon>
           </Tooltip>
-        </ArgonTypography>
-      </ArgonBox>
-      <ArgonBox p={2}>
-        <ArgonBox mb={2} lineHeight={1}>
-          <ArgonTypography variant="button" color="text" fontWeight="regular">
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+      <MicroEdgeBox p={2}>
+        <MicroEdgeBox mb={2} lineHeight={1}>
+          <MicroEdgeTypography variant="button" color="text" fontWeight="regular">
             {description}
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox opacity={0.3}>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeBox opacity={0.3}>
           <Divider />
-        </ArgonBox>
-        <ArgonBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox>
           {renderItems}
-          <ArgonBox display="flex" py={1} pr={2}>
-            <ArgonTypography variant="button" fontWeight="bold" textTransform="capitalize">
+          <MicroEdgeBox display="flex" py={1} pr={2}>
+            <MicroEdgeTypography variant="button" fontWeight="bold" textTransform="capitalize">
               social: &nbsp;
-            </ArgonTypography>
+            </MicroEdgeTypography>
             {renderSocial}
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -23,8 +23,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -65,7 +65,7 @@ function Overview() {
       }}
     >
       <Header />
-      <ArgonBox mt={5} mb={3}>
+      <MicroEdgeBox mt={5} mb={3}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} xl={4}>
             <PlatformSettings />
@@ -104,22 +104,22 @@ function Overview() {
             <ProfilesList title="conversations" profiles={profilesListData} />
           </Grid>
         </Grid>
-      </ArgonBox>
-      <ArgonBox mb={3}>
+      </MicroEdgeBox>
+      <MicroEdgeBox mb={3}>
         <Card>
-          <ArgonBox pt={2} px={2}>
-            <ArgonBox mb={0.5}>
-              <ArgonTypography variant="h6" fontWeight="medium">
+          <MicroEdgeBox pt={2} px={2}>
+            <MicroEdgeBox mb={0.5}>
+              <MicroEdgeTypography variant="h6" fontWeight="medium">
                 Projects
-              </ArgonTypography>
-            </ArgonBox>
-            <ArgonBox mb={1}>
-              <ArgonTypography variant="button" fontWeight="regular" color="text">
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+            <MicroEdgeBox mb={1}>
+              <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
                 Architects design houses
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
-          <ArgonBox p={2}>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
+          <MicroEdgeBox p={2}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6} xl={3}>
                 <DefaultProjectCard
@@ -185,9 +185,9 @@ function Overview() {
                 <PlaceholderCard title={{ variant: "h5", text: "New project" }} outlined />
               </Grid>
             </Grid>
-          </ArgonBox>
+          </MicroEdgeBox>
         </Card>
-      </ArgonBox>
+      </MicroEdgeBox>
 
       <Footer />
     </DashboardLayout>

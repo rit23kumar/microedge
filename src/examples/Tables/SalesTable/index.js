@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -26,8 +26,8 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
 // MicroEdge Suite components
-import ArgonTypography from "components/ArgonTypography";
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // MicroEdge Suite example components
 import SalesTableCell from "examples/Tables/SalesTable/SalesTableCell";
@@ -65,11 +65,11 @@ function SalesTable({ title, rows }) {
     <TableContainer sx={{ height: "100%" }}>
       <Table>
         <TableHead>
-          <ArgonBox component="tr" width="max-content" display="block" mb={1.5}>
-            <ArgonTypography variant="h6" component="td">
+          <MicroEdgeBox component="tr" width="max-content" display="block" mb={1.5}>
+            <MicroEdgeTypography variant="h6" component="td">
               {title}
-            </ArgonTypography>
-          </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
         </TableHead>
         <TableBody>{useMemo(() => renderTableCells, [rows])}</TableBody>
       </Table>

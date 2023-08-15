@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,8 +20,8 @@ import CountUp from "react-countup";
 import PropTypes from "prop-types";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite base styles
 import colors from "assets/theme/base/colors";
@@ -32,31 +32,31 @@ function OutlinedCounterCard({ color, count, title, prefix, suffix }) {
   const { borderWidth } = borders;
 
   return (
-    <ArgonBox
+    <MicroEdgeBox
       borderRadius="md"
       border={`${borderWidth[1]} dashed ${secondary.main}`}
       textAlign="center"
       py={2}
     >
-      <ArgonTypography variant="h6" color={color} fontWeight="medium" textTransform="capitalize">
+      <MicroEdgeTypography variant="h6" color={color} fontWeight="medium" textTransform="capitalize">
         {title}
-      </ArgonTypography>
-      <ArgonTypography variant="h4" fontWeight="bold">
+      </MicroEdgeTypography>
+      <MicroEdgeTypography variant="h4" fontWeight="bold">
         {prefix && (
-          <ArgonTypography component="span" variant="h5" fontWeight="bold">
+          <MicroEdgeTypography component="span" variant="h5" fontWeight="bold">
             {prefix}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         )}
-        <ArgonBox display="inline-block" color="inherit" mx={0.5}>
+        <MicroEdgeBox display="inline-block" color="inherit" mx={0.5}>
           <CountUp end={count} duration={1} separator="," />
-        </ArgonBox>
+        </MicroEdgeBox>
         {suffix && (
-          <ArgonTypography component="span" variant="h5" fontWeight="bold">
+          <MicroEdgeTypography component="span" variant="h5" fontWeight="bold">
             {suffix}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         )}
-      </ArgonTypography>
-    </ArgonBox>
+      </MicroEdgeTypography>
+    </MicroEdgeBox>
   );
 }
 

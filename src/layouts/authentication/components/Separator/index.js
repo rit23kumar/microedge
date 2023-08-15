@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -17,14 +17,14 @@ Coded by www.creative-tim.com
 import Divider from "@mui/material/Divider";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function Separator() {
   return (
-    <ArgonBox position="relative" py={0.25}>
+    <MicroEdgeBox position="relative" py={0.25}>
       <Divider />
-      <ArgonBox
+      <MicroEdgeBox
         bgColor="white"
         position="absolute"
         top="50%"
@@ -33,11 +33,11 @@ function Separator() {
         lineHeight={1}
         sx={{ transform: "translate(-50%, -60%)" }}
       >
-        <ArgonTypography variant="button" fontWeight="medium" color="secondary">
+        <MicroEdgeTypography variant="button" fontWeight="medium" color="secondary">
           or
-        </ArgonTypography>
-      </ArgonBox>
-    </ArgonBox>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 

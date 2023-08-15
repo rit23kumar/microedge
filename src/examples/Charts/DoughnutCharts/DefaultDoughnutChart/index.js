@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -25,8 +25,8 @@ import { Doughnut } from "react-chartjs-2";
 import Card from "@mui/material/Card";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // DefaultDoughnutChart configurations
 import configs from "examples/Charts/DoughnutCharts/DefaultDoughnutChart/configs";
@@ -35,30 +35,30 @@ function DefaultDoughnutChart({ title, description, height, chart }) {
   const { data, options } = configs(chart.labels || [], chart.datasets || {}, chart.cutout);
 
   const renderChart = (
-    <ArgonBox p={2}>
+    <MicroEdgeBox p={2}>
       {title || description ? (
-        <ArgonBox px={description ? 1 : 0} pt={description ? 1 : 0}>
+        <MicroEdgeBox px={description ? 1 : 0} pt={description ? 1 : 0}>
           {title && (
-            <ArgonBox mb={1}>
-              <ArgonTypography variant="h6">{title}</ArgonTypography>
-            </ArgonBox>
+            <MicroEdgeBox mb={1}>
+              <MicroEdgeTypography variant="h6">{title}</MicroEdgeTypography>
+            </MicroEdgeBox>
           )}
-          <ArgonBox mb={2}>
-            <ArgonTypography component="div" variant="button" fontWeight="regular" color="text">
+          <MicroEdgeBox mb={2}>
+            <MicroEdgeTypography component="div" variant="button" fontWeight="regular" color="text">
               {description}
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
       ) : null}
       {useMemo(
         () => (
-          <ArgonBox height={height}>
+          <MicroEdgeBox height={height}>
             <Doughnut data={data} options={options} />
-          </ArgonBox>
+          </MicroEdgeBox>
         ),
         [chart, height]
       )}
-    </ArgonBox>
+    </MicroEdgeBox>
   );
 
   return title || description ? <Card>{renderChart}</Card> : renderChart;

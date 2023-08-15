@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -18,9 +18,9 @@ import Card from "@mui/material/Card";
 import Tooltip from "@mui/material/Tooltip";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonAvatar from "components/ArgonAvatar";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeAvatar from "components/MicroEdgeAvatar";
 
 // Images
 import team1 from "assets/images/team-1.jpg";
@@ -43,25 +43,25 @@ function Messages() {
 
   return (
     <Card>
-      <ArgonBox display="flex" alignItems="center" justifyContent="space-between" p={3}>
-        <ArgonTypography variant="body2" color="text">
+      <MicroEdgeBox display="flex" alignItems="center" justifyContent="space-between" p={3}>
+        <MicroEdgeTypography variant="body2" color="text">
           Messages
-        </ArgonTypography>
-        <ArgonBox display="flex">
+        </MicroEdgeTypography>
+        <MicroEdgeBox display="flex">
           <Tooltip title="2 New Messages" placement="top">
-            <ArgonAvatar src={team1} alt="team-1" size="sm" sx={messagesAvatarStyles} />
+            <MicroEdgeAvatar src={team1} alt="team-1" size="sm" sx={messagesAvatarStyles} />
           </Tooltip>
           <Tooltip title="1 New Messages" placement="top">
-            <ArgonAvatar src={team2} alt="team-2" size="sm" sx={messagesAvatarStyles} />
+            <MicroEdgeAvatar src={team2} alt="team-2" size="sm" sx={messagesAvatarStyles} />
           </Tooltip>
           <Tooltip title="13 New Messages" placement="top">
-            <ArgonAvatar src={team3} alt="team-3" size="sm" sx={messagesAvatarStyles} />
+            <MicroEdgeAvatar src={team3} alt="team-3" size="sm" sx={messagesAvatarStyles} />
           </Tooltip>
           <Tooltip title="7 New Messages" placement="top">
-            <ArgonAvatar src={team4} alt="team-4" size="sm" sx={messagesAvatarStyles} />
+            <MicroEdgeAvatar src={team4} alt="team-4" size="sm" sx={messagesAvatarStyles} />
           </Tooltip>
-        </ArgonBox>
-      </ArgonBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

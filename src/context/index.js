@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,10 +24,10 @@ import { createContext, useContext, useReducer, useMemo } from "react";
 import PropTypes from "prop-types";
 
 // The MicroEdge Suite main context
-const Argon = createContext(null);
+const MicroEdge = createContext(null);
 
 // Setting custom name for the context which is visible on react dev tools
-Argon.displayName = "ArgonContext";
+MicroEdge.displayName = "MicroEdgeContext";
 
 // MicroEdge Suite reducer
 function reducer(state, action) {
@@ -66,7 +66,7 @@ function reducer(state, action) {
 }
 
 // MicroEdge Suite context provider
-function ArgonControllerProvider({ children }) {
+function MicroEdgeControllerProvider({ children }) {
   const initialState = {
     miniSidenav: false,
     darkSidenav: false,
@@ -83,22 +83,22 @@ function ArgonControllerProvider({ children }) {
 
   const value = useMemo(() => [controller, dispatch], [controller, dispatch]);
 
-  return <Argon.Provider value={value}>{children}</Argon.Provider>;
+  return <MicroEdge.Provider value={value}>{children}</MicroEdge.Provider>;
 }
 
 // MicroEdge Suite custom hook for using context
-function useArgonController() {
-  const context = useContext(Argon);
+function useMicroEdgeController() {
+  const context = useContext(MicroEdge);
 
   if (!context) {
-    throw new Error("useArgonController should be used inside the ArgonControllerProvider.");
+    throw new Error("useMicroEdgeController should be used inside the MicroEdgeControllerProvider.");
   }
 
   return context;
 }
 
-// Typechecking props for the ArgonControllerProvider
-ArgonControllerProvider.propTypes = {
+// Typechecking props for the MicroEdgeControllerProvider
+MicroEdgeControllerProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
@@ -114,8 +114,8 @@ const setLayout = (dispatch, value) => dispatch({ type: "LAYOUT", value });
 const setDarkMode = (dispatch, value) => dispatch({ type: "DARK_MODE", value });
 
 export {
-  ArgonControllerProvider,
-  useArgonController,
+  MicroEdgeControllerProvider,
+  useMicroEdgeController,
   setMiniSidenav,
   setDarkSidenav,
   setSidenavColor,

@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -19,8 +19,8 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -43,10 +43,10 @@ import salesTableData from "layouts/dashboard/data/salesTableData";
 import categoriesListData from "layouts/dashboard/data/categoriesListData";
 
 // MicroEdge Suite contexts
-import { useArgonController, setDirection } from "context";
+import { useMicroEdgeController, setDirection } from "context";
 
 function RTL() {
-  const [, dispatch] = useArgonController();
+  const [, dispatch] = useMicroEdgeController();
   const { size } = typography;
 
   // Changing the direction to rtl
@@ -59,7 +59,7 @@ function RTL() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <ArgonBox py={3}>
+      <MicroEdgeBox py={3}>
         <Grid container spacing={3} mb={3}>
           <Grid item xs={12} md={6} lg={3}>
             <DetailedStatisticsCard
@@ -99,17 +99,17 @@ function RTL() {
             <GradientLineChart
               title="Sales Overview"
               description={
-                <ArgonBox display="flex" alignItems="center">
-                  <ArgonBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
+                <MicroEdgeBox display="flex" alignItems="center">
+                  <MicroEdgeBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
                     <Icon sx={{ fontWeight: "bold" }}>arrow_upward</Icon>
-                  </ArgonBox>
-                  <ArgonTypography variant="button" color="text" fontWeight="medium">
+                  </MicroEdgeBox>
+                  <MicroEdgeTypography variant="button" color="text" fontWeight="medium">
                     4% more{" "}
-                    <ArgonTypography variant="button" color="text" fontWeight="regular">
+                    <MicroEdgeTypography variant="button" color="text" fontWeight="regular">
                       in 2022
-                    </ArgonTypography>
-                  </ArgonTypography>
-                </ArgonBox>
+                    </MicroEdgeTypography>
+                  </MicroEdgeTypography>
+                </MicroEdgeBox>
               }
               chart={gradientLineChartData}
             />
@@ -126,7 +126,7 @@ function RTL() {
             <CategoriesList title="categories" categories={categoriesListData} />
           </Grid>
         </Grid>
-      </ArgonBox>
+      </MicroEdgeBox>
       <Footer />
     </DashboardLayout>
   );

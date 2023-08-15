@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -27,18 +27,18 @@ import MuiLink from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite exampless
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
 // MicroEdge Suite PRO React contexts
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function DefaultNavbarMobile({ routes, open }) {
   const [collapse, setCollapse] = useState("");
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { darkMode } = controller;
 
   const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
@@ -55,15 +55,15 @@ function DefaultNavbarMobile({ routes, open }) {
         route={route}
         collapse={Boolean(navCollapse)}
       >
-        <ArgonBox sx={{ height: "15rem", maxHeight: "15rem", overflowY: "scroll" }}>
+        <MicroEdgeBox sx={{ height: "15rem", maxHeight: "15rem", overflowY: "scroll" }}>
           {routeCollapses &&
             routeCollapses.map((item) => (
-              <ArgonBox key={item.name} px={item.icon ? 1 : 2}>
+              <MicroEdgeBox key={item.name} px={item.icon ? 1 : 2}>
                 {item.collapse ? (
                   <>
-                    <ArgonBox width="100%" display="flex" alignItems="center" p={1}>
+                    <MicroEdgeBox width="100%" display="flex" alignItems="center" p={1}>
                       {item.icon && (
-                        <ArgonBox
+                        <MicroEdgeBox
                           display="flex"
                           justifyContent="center"
                           alignItems="center"
@@ -76,19 +76,19 @@ function DefaultNavbarMobile({ routes, open }) {
                           lineHeight={1}
                         >
                           {typeof item.icon === "string" ? <Icon>{item.icon}</Icon> : item.icon}
-                        </ArgonBox>
+                        </MicroEdgeBox>
                       )}
-                      <ArgonTypography
+                      <MicroEdgeTypography
                         display="block"
                         variant="button"
                         fontWeight="bold"
                         textTransform="capitalize"
                       >
                         {item.name}
-                      </ArgonTypography>
-                    </ArgonBox>
+                      </MicroEdgeTypography>
+                    </MicroEdgeBox>
                     {item.collapse.map((el, index) => (
-                      <ArgonTypography
+                      <MicroEdgeTypography
                         key={el.name}
                         component={el.route ? Link : MuiLink}
                         to={el.route ? el.route : ""}
@@ -120,11 +120,11 @@ function DefaultNavbarMobile({ routes, open }) {
                         })}
                       >
                         {el.name}
-                      </ArgonTypography>
+                      </MicroEdgeTypography>
                     ))}
                   </>
                 ) : (
-                  <ArgonBox
+                  <MicroEdgeBox
                     key={item.key}
                     display="flex"
                     component={item.route ? Link : MuiLink}
@@ -149,7 +149,7 @@ function DefaultNavbarMobile({ routes, open }) {
                       },
                     })}
                   >
-                    <ArgonBox
+                    <MicroEdgeBox
                       display="flex"
                       justifyContent="center"
                       alignItems="center"
@@ -162,9 +162,9 @@ function DefaultNavbarMobile({ routes, open }) {
                       lineHeight={1}
                     >
                       {typeof item.icon === "string" ? <Icon>{item.icon}</Icon> : item.icon}
-                    </ArgonBox>
-                    <ArgonBox>
-                      <ArgonTypography
+                    </MicroEdgeBox>
+                    <MicroEdgeBox>
+                      <MicroEdgeTypography
                         display="block"
                         variant="button"
                         fontWeight={!item.description ? "regular" : "bold"}
@@ -172,9 +172,9 @@ function DefaultNavbarMobile({ routes, open }) {
                         textTransform="capitalize"
                       >
                         {item.name || "&nbsp"}
-                      </ArgonTypography>
+                      </MicroEdgeTypography>
                       {item.description && (
-                        <ArgonTypography
+                        <MicroEdgeTypography
                           display="block"
                           variant="button"
                           color="text"
@@ -182,23 +182,23 @@ function DefaultNavbarMobile({ routes, open }) {
                           sx={{ transition: "all 300ms linear" }}
                         >
                           {item.description}
-                        </ArgonTypography>
+                        </MicroEdgeTypography>
                       )}
-                    </ArgonBox>
-                  </ArgonBox>
+                    </MicroEdgeBox>
+                  </MicroEdgeBox>
                 )}
-              </ArgonBox>
+              </MicroEdgeBox>
             ))}
-        </ArgonBox>
+        </MicroEdgeBox>
       </DefaultNavbarDropdown>
     )
   );
 
   return (
     <Collapse in={Boolean(open)} timeout="auto" unmountOnExit>
-      <ArgonBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
+      <MicroEdgeBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
         {renderNavbarItems}
-      </ArgonBox>
+      </MicroEdgeBox>
     </Collapse>
   );
 }

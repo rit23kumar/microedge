@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -28,16 +28,16 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // Custom styles for the Configurator
 import ConfiguratorRoot from "examples/Configurator/ConfiguratorRoot";
 
 // MicroEdge Suite context
 import {
-  useArgonController,
+  useMicroEdgeController,
   setOpenConfigurator,
   setDarkSidenav,
   setMiniSidenav,
@@ -47,7 +47,7 @@ import {
 } from "context";
 
 function Configurator() {
-  const [controller, dispatch] = useArgonController();
+  const [controller, dispatch] = useMicroEdgeController();
   const { openConfigurator, darkSidenav, miniSidenav, fixedNavbar, sidenavColor, darkMode } =
     controller;
   const sidenavColors = ["primary", "dark", "info", "success", "warning", "error"];
@@ -64,7 +64,7 @@ function Configurator() {
 
   return (
     <ConfiguratorRoot variant="permanent" ownerState={{ openConfigurator }}>
-      <ArgonBox
+      <MicroEdgeBox
         display="flex"
         justifyContent="space-between"
         alignItems="baseline"
@@ -72,12 +72,12 @@ function Configurator() {
         pb={0.8}
         px={3}
       >
-        <ArgonBox>
-          <ArgonTypography variant="h5">Argon Configurator</ArgonTypography>
-          <ArgonTypography variant="body2" color="text">
+        <MicroEdgeBox>
+          <MicroEdgeTypography variant="h5">MicroEdge Configurator</MicroEdgeTypography>
+          <MicroEdgeTypography variant="body2" color="text">
             See our dashboard options.
-          </ArgonTypography>
-        </ArgonBox>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
 
         <Icon
           sx={({ typography: { size, fontWeightBold }, palette: { dark, white } }) => ({
@@ -93,15 +93,15 @@ function Configurator() {
         >
           close
         </Icon>
-      </ArgonBox>
+      </MicroEdgeBox>
 
       <Divider />
 
-      <ArgonBox pt={1.25} pb={3} px={3}>
-        <ArgonBox>
-          <ArgonTypography variant="h6">Sidenav Colors</ArgonTypography>
+      <MicroEdgeBox pt={1.25} pb={3} px={3}>
+        <MicroEdgeBox>
+          <MicroEdgeTypography variant="h6">Sidenav Colors</MicroEdgeTypography>
 
-          <ArgonBox mb={0.5}>
+          <MicroEdgeBox mb={0.5}>
             {sidenavColors.map((color) => (
               <IconButton
                 key={color}
@@ -129,30 +129,30 @@ function Configurator() {
                 onClick={() => setSidenavColor(dispatch, color)}
               />
             ))}
-          </ArgonBox>
-        </ArgonBox>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
 
-        <ArgonBox mt={3} lineHeight={1}>
-          <ArgonTypography variant="h6">Sidenav Type</ArgonTypography>
-          <ArgonTypography variant="button" color="text" fontWeight="regular">
+        <MicroEdgeBox mt={3} lineHeight={1}>
+          <MicroEdgeTypography variant="h6">Sidenav Type</MicroEdgeTypography>
+          <MicroEdgeTypography variant="button" color="text" fontWeight="regular">
             Choose between 2 different sidenav types.
-          </ArgonTypography>
+          </MicroEdgeTypography>
 
-          <ArgonBox
+          <MicroEdgeBox
             sx={{
               display: "flex",
               mt: 2,
             }}
           >
-            <ArgonButton
+            <MicroEdgeButton
               color="info"
               variant={darkSidenav ? "outlined" : "gradient"}
               onClick={handleWhiteSidenav}
               fullWidth
             >
               White
-            </ArgonButton>
-            <ArgonButton
+            </MicroEdgeButton>
+            <MicroEdgeButton
               color="info"
               variant={darkSidenav ? "gradient" : "outlined"}
               onClick={handledarkSidenav}
@@ -162,59 +162,59 @@ function Configurator() {
               }}
             >
               Dark
-            </ArgonButton>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox display="flex" justifyContent="space-between" mt={3} lineHeight={1}>
-          <ArgonTypography variant="h6">Navbar Fixed</ArgonTypography>
+            </MicroEdgeButton>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" justifyContent="space-between" mt={3} lineHeight={1}>
+          <MicroEdgeTypography variant="h6">Navbar Fixed</MicroEdgeTypography>
 
           <Switch checked={fixedNavbar} onChange={handleFixedNavbar} />
-        </ArgonBox>
+        </MicroEdgeBox>
 
         <Divider />
 
-        <ArgonBox display="flex" justifyContent="space-between" lineHeight={1}>
-          <ArgonTypography variant="h6">Sidenav Mini</ArgonTypography>
+        <MicroEdgeBox display="flex" justifyContent="space-between" lineHeight={1}>
+          <MicroEdgeTypography variant="h6">Sidenav Mini</MicroEdgeTypography>
 
           <Switch checked={miniSidenav} onChange={handleMiniSidenav} />
-        </ArgonBox>
+        </MicroEdgeBox>
 
         <Divider />
 
-        <ArgonBox display="flex" justifyContent="space-between" lineHeight={1}>
-          <ArgonTypography variant="h6">Light / Dark</ArgonTypography>
+        <MicroEdgeBox display="flex" justifyContent="space-between" lineHeight={1}>
+          <MicroEdgeTypography variant="h6">Light / Dark</MicroEdgeTypography>
 
           <Switch checked={darkMode} onChange={handleDarkMode} />
-        </ArgonBox>
+        </MicroEdgeBox>
 
-        <ArgonBox mt={5} mb={2}>
-          <ArgonBox mb={2}>
-            <ArgonButton
+        <MicroEdgeBox mt={5} mb={2}>
+          <MicroEdgeBox mb={2}>
+            <MicroEdgeButton
               component={Link}
-              href="https://www.creative-tim.com/product/argon-dashboard-pro-material-ui"
+              href="https://www.rishu.fun/product/argon-dashboard-pro-material-ui"
               target="_blank"
               rel="noreferrer"
               color="info"
               fullWidth
             >
               Buy Now
-            </ArgonButton>
-          </ArgonBox>
-          <ArgonBox mb={2}>
-            <ArgonButton
+            </MicroEdgeButton>
+          </MicroEdgeBox>
+          <MicroEdgeBox mb={2}>
+            <MicroEdgeButton
               component={Link}
-              href="https://www.creative-tim.com/product/argon-dashboard-material-ui"
+              href="https://www.rishu.fun/product/argon-dashboard-material-ui"
               target="_blank"
               rel="noreferrer"
               color="dark"
               fullWidth
             >
               Free Download
-            </ArgonButton>
-          </ArgonBox>
-          <ArgonButton
+            </MicroEdgeButton>
+          </MicroEdgeBox>
+          <MicroEdgeButton
             component={Link}
-            href="https://www.creative-tim.com/learning-lab/react/quick-start/argon-dashboard/"
+            href="https://www.rishu.fun/learning-lab/react/quick-start/argon-dashboard/"
             target="_blank"
             rel="noreferrer"
             color={darkMode ? "white" : "dark"}
@@ -222,9 +222,9 @@ function Configurator() {
             fullWidth
           >
             View Documentation
-          </ArgonButton>
-        </ArgonBox>
-        <ArgonBox display="flex" justifyContent="center">
+          </MicroEdgeButton>
+        </MicroEdgeBox>
+        <MicroEdgeBox display="flex" justifyContent="center">
           <GitHubButton
             href="https://github.com/creativetimofficial/argon-dashboard-material-ui"
             data-icon="octicon-star"
@@ -234,38 +234,38 @@ function Configurator() {
           >
             Star
           </GitHubButton>
-        </ArgonBox>
-        <ArgonBox mt={3} textAlign="center">
-          <ArgonBox mb={0.5}>
-            <ArgonTypography variant="h6">Thank you for sharing!</ArgonTypography>
-          </ArgonBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox mt={3} textAlign="center">
+          <MicroEdgeBox mb={0.5}>
+            <MicroEdgeTypography variant="h6">Thank you for sharing!</MicroEdgeTypography>
+          </MicroEdgeBox>
 
-          <ArgonBox display="flex" justifyContent="center">
-            <ArgonBox mr={1.5}>
-              <ArgonButton
+          <MicroEdgeBox display="flex" justifyContent="center">
+            <MicroEdgeBox mr={1.5}>
+              <MicroEdgeButton
                 component={Link}
-                href="//twitter.com/intent/tweet?text=Check%20Argon%20Dashboard%202%20PRO%20MUI%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23react%20%mui&url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fargon-dashboard-material-ui"
+                href="//twitter.com/intent/tweet?text=Check%20MicroEdge%20Dashboard%202%20PRO%20MUI%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23react%20%mui&url=https%3A%2F%2Fwww.rishu.fun%2Fproduct%2Fargon-dashboard-material-ui"
                 target="_blank"
                 rel="noreferrer"
                 color="dark"
               >
                 <TwitterIcon />
                 &nbsp; Tweet
-              </ArgonButton>
-            </ArgonBox>
-            <ArgonButton
+              </MicroEdgeButton>
+            </MicroEdgeBox>
+            <MicroEdgeButton
               component={Link}
-              href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/argon-dashboard-material-ui"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://www.rishu.fun/product/argon-dashboard-material-ui"
               target="_blank"
               rel="noreferrer"
               color="dark"
             >
               <FacebookIcon />
               &nbsp; Share
-            </ArgonButton>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+            </MicroEdgeButton>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </ConfiguratorRoot>
   );
 }

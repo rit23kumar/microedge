@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -19,10 +19,10 @@ import Tooltip from "@mui/material/Tooltip";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonAvatar from "components/ArgonAvatar";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeAvatar from "components/MicroEdgeAvatar";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // MicroEdge Suite base styles
 import typography from "assets/theme/base/typography";
@@ -44,7 +44,7 @@ function VRInfo() {
 
   return (
     <BaseLayout>
-      <ArgonBox
+      <MicroEdgeBox
         minHeight="100vh"
         ml={{ xs: 0, md: 6 }}
         mt={{ xs: 0, md: 4 }}
@@ -54,7 +54,7 @@ function VRInfo() {
       >
         <Grid container>
           <Grid item xs={12} md={1}>
-            <ArgonBox
+            <MicroEdgeBox
               display="flex"
               flexDirection={{ xs: "row", md: "column" }}
               justifyContent="center"
@@ -63,7 +63,7 @@ function VRInfo() {
               mb={{ xs: 8, md: 0 }}
             >
               <Tooltip title="My Profile" placement="right">
-                <ArgonAvatar
+                <MicroEdgeAvatar
                   src={team1}
                   alt="Profile Picture"
                   size="lg"
@@ -72,9 +72,9 @@ function VRInfo() {
                 />
               </Tooltip>
 
-              <ArgonBox my={{ xs: 0, md: 2 }} mx={{ xs: 2, md: 0 }}>
+              <MicroEdgeBox my={{ xs: 0, md: 2 }} mx={{ xs: 2, md: 0 }}>
                 <Tooltip title="Home" placement="right">
-                  <ArgonButton
+                  <MicroEdgeButton
                     size="large"
                     iconOnly
                     sx={({ palette: { dark }, borders: { borderRadius } }) => ({
@@ -83,12 +83,12 @@ function VRInfo() {
                     })}
                   >
                     <Icon>home</Icon>
-                  </ArgonButton>
+                  </MicroEdgeButton>
                 </Tooltip>
-              </ArgonBox>
-              <ArgonBox mb={{ xs: 0, md: 2 }} mr={{ xs: 2, md: 0 }}>
+              </MicroEdgeBox>
+              <MicroEdgeBox mb={{ xs: 0, md: 2 }} mr={{ xs: 2, md: 0 }}>
                 <Tooltip title="Search" placement="right">
-                  <ArgonButton
+                  <MicroEdgeButton
                     size="large"
                     iconOnly
                     sx={({ palette: { dark }, borders: { borderRadius } }) => ({
@@ -97,11 +97,11 @@ function VRInfo() {
                     })}
                   >
                     <Icon>search</Icon>
-                  </ArgonButton>
+                  </MicroEdgeButton>
                 </Tooltip>
-              </ArgonBox>
+              </MicroEdgeBox>
               <Tooltip title="Minimize" placement="right">
-                <ArgonButton
+                <MicroEdgeButton
                   size="large"
                   iconOnly
                   sx={({ palette: { dark }, borders: { borderRadius } }) => ({
@@ -110,60 +110,60 @@ function VRInfo() {
                   })}
                 >
                   <Icon>more_horiz</Icon>
-                </ArgonButton>
+                </MicroEdgeButton>
               </Tooltip>
-            </ArgonBox>
+            </MicroEdgeBox>
           </Grid>
           <Grid item xs={12} md={11} lg={10} xl={9} ml={6} mt={-6}>
-            <ArgonBox
+            <MicroEdgeBox
               display="flex"
               justifyContent="space-between"
               alignItems={{ xs: "center", md: "flex-end" }}
               ml={{ xs: 1, md: 4 }}
               mt={-1}
             >
-              <ArgonBox>
-                <ArgonBox
+              <MicroEdgeBox>
+                <MicroEdgeBox
                   fontSize={{ xs: h2.fontSize, lg: d1.fontSize }}
                   fontWeight={fontWeightMedium}
                   lineHeight={1}
                   color="white"
                 >
                   28&deg;C
-                </ArgonBox>
-                <ArgonTypography
+                </MicroEdgeBox>
+                <MicroEdgeTypography
                   variant="h6"
                   color="white"
                   fontWeight="medium"
                   textTransform="uppercase"
                 >
                   cloudy
-                </ArgonTypography>
-              </ArgonBox>
-              <ArgonBox component="img" src={sunCloud} width="30%" />
-            </ArgonBox>
-            <ArgonBox mt={3} mb={8} ml={{ xs: 1, md: 4 }} mr={{ xs: 1, md: 0 }}>
+                </MicroEdgeTypography>
+              </MicroEdgeBox>
+              <MicroEdgeBox component="img" src={sunCloud} width="30%" />
+            </MicroEdgeBox>
+            <MicroEdgeBox mt={3} mb={8} ml={{ xs: 1, md: 4 }} mr={{ xs: 1, md: 0 }}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={4}>
                   <TodoList />
                 </Grid>
                 <Grid item xs={12} md={4}>
-                  <ArgonBox mb={3}>
+                  <MicroEdgeBox mb={3}>
                     <TodoCard />
-                  </ArgonBox>
+                  </MicroEdgeBox>
                   <Emails />
                 </Grid>
                 <Grid item xs={12} md={4}>
-                  <ArgonBox mb={3}>
+                  <MicroEdgeBox mb={3}>
                     <MediaPlayer />
-                  </ArgonBox>
+                  </MicroEdgeBox>
                   <Messages />
                 </Grid>
               </Grid>
-            </ArgonBox>
+            </MicroEdgeBox>
           </Grid>
         </Grid>
-      </ArgonBox>
+      </MicroEdgeBox>
     </BaseLayout>
   );
 }

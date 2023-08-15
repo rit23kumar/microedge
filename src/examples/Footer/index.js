@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -21,8 +21,8 @@ import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite base styles
 import typography from "assets/theme/base/typography";
@@ -33,17 +33,17 @@ function Footer({ company, links }) {
 
   const renderLinks = () =>
     links.map((link) => (
-      <ArgonBox key={link.name} component="li" px={2} lineHeight={1}>
+      <MicroEdgeBox key={link.name} component="li" px={2} lineHeight={1}>
         <Link href={link.href} target="_blank">
-          <ArgonTypography variant="button" fontWeight="regular" color="text">
+          <MicroEdgeTypography variant="button" fontWeight="regular" color="text">
             {link.name}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         </Link>
-      </ArgonBox>
+      </MicroEdgeBox>
     ));
 
   return (
-    <ArgonBox
+    <MicroEdgeBox
       width="100%"
       display="flex"
       flexDirection={{ xs: "column", lg: "row" }}
@@ -51,7 +51,7 @@ function Footer({ company, links }) {
       alignItems="center"
       px={1.5}
     >
-      <ArgonBox
+      <MicroEdgeBox
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -61,20 +61,20 @@ function Footer({ company, links }) {
         px={1.5}
       >
         &copy; {new Date().getFullYear()}, made with
-        <ArgonBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
+        <MicroEdgeBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
           <Icon color="inherit" fontSize="inherit">
             favorite
           </Icon>
-        </ArgonBox>
+        </MicroEdgeBox>
         by
         <Link href={href} target="_blank">
-          <ArgonTypography variant="button" fontWeight="medium">
+          <MicroEdgeTypography variant="button" fontWeight="medium">
             &nbsp;{name}&nbsp;
-          </ArgonTypography>
+          </MicroEdgeTypography>
         </Link>
         for a better web.
-      </ArgonBox>
-      <ArgonBox
+      </MicroEdgeBox>
+      <MicroEdgeBox
         component="ul"
         sx={({ breakpoints }) => ({
           display: "flex",
@@ -92,19 +92,19 @@ function Footer({ company, links }) {
         })}
       >
         {renderLinks()}
-      </ArgonBox>
-    </ArgonBox>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 
 // Setting default values for the props of Footer
 Footer.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.rishu.fun/", name: "MicroEdge" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://www.rishu.fun/", name: "MicroEdge" },
+    { href: "https://www.rishu.fun/presentation", name: "About Us" },
+    { href: "https://www.rishu.fun/blog", name: "Blog" },
+    { href: "https://www.rishu.fun/license", name: "License" },
   ],
 };
 

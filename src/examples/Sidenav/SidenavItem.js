@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,22 +24,22 @@ import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
+import MicroEdgeBox from "components/MicroEdgeBox";
 
 // Custom styles for the sidenavItem
 import { item, itemIcon, itemText, itemIconBox } from "examples/Sidenav/styles/sidenavItem";
 
 // MicroEdge Suite context
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function SidenavItem({ icon, name, active, open, ...rest }) {
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { miniSidenav, darkSidenav, sidenavColor } = controller;
 
   return (
     <>
       <ListItem component="li">
-        <ArgonBox
+        <MicroEdgeBox
           {...rest}
           sx={(theme) => item(theme, { active, darkSidenav, sidenavColor, miniSidenav })}
         >
@@ -55,7 +55,7 @@ function SidenavItem({ icon, name, active, open, ...rest }) {
             primary={name}
             sx={(theme) => itemText(theme, { miniSidenav, darkSidenav, active })}
           />
-        </ArgonBox>
+        </MicroEdgeBox>
       </ListItem>
     </>
   );

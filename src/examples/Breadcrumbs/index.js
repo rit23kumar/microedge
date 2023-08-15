@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,14 +24,14 @@ import { Breadcrumbs as MuiBreadcrumbs } from "@mui/material";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);
 
   return (
-    <ArgonBox mr={{ xs: 0, xl: 8 }}>
+    <MicroEdgeBox mr={{ xs: 0, xl: 8 }}>
       <MuiBreadcrumbs
         sx={{
           "& .MuiBreadcrumbs-separator": {
@@ -40,7 +40,7 @@ function Breadcrumbs({ icon, title, route, light }) {
         }}
       >
         <Link to="/">
-          <ArgonTypography
+          <MicroEdgeTypography
             component="span"
             variant="body2"
             color={light ? "white" : "dark"}
@@ -48,11 +48,11 @@ function Breadcrumbs({ icon, title, route, light }) {
             sx={{ lineHeight: 0 }}
           >
             <Icon>{icon}</Icon>
-          </ArgonTypography>
+          </MicroEdgeTypography>
         </Link>
         {routes.map((el) => (
           <Link to={`/${el}`} key={el}>
-            <ArgonTypography
+            <MicroEdgeTypography
               component="span"
               variant="button"
               fontWeight="regular"
@@ -62,10 +62,10 @@ function Breadcrumbs({ icon, title, route, light }) {
               sx={{ lineHeight: 0 }}
             >
               {el}
-            </ArgonTypography>
+            </MicroEdgeTypography>
           </Link>
         ))}
-        <ArgonTypography
+        <MicroEdgeTypography
           variant="button"
           fontWeight="regular"
           textTransform="capitalize"
@@ -73,9 +73,9 @@ function Breadcrumbs({ icon, title, route, light }) {
           sx={{ lineHeight: 0 }}
         >
           {title.replace("-", " ")}
-        </ArgonTypography>
+        </MicroEdgeTypography>
       </MuiBreadcrumbs>
-      <ArgonTypography
+      <MicroEdgeTypography
         fontWeight="bold"
         textTransform="capitalize"
         variant="h6"
@@ -83,8 +83,8 @@ function Breadcrumbs({ icon, title, route, light }) {
         noWrap
       >
         {title.replace("-", " ")}
-      </ArgonTypography>
-    </ArgonBox>
+      </MicroEdgeTypography>
+    </MicroEdgeBox>
   );
 }
 

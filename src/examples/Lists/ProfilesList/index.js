@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -23,37 +23,37 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonAvatar from "components/ArgonAvatar";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeAvatar from "components/MicroEdgeAvatar";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 function ProfilesList({ title, profiles }) {
   const renderProfiles = profiles.map(({ image, name, description, action }) => (
-    <ArgonBox key={name} component="li" display="flex" alignItems="center" py={1} mb={1}>
-      <ArgonBox mr={2}>
-        <ArgonAvatar src={image} alt="something here" variant="rounded" shadow="md" />
-      </ArgonBox>
-      <ArgonBox
+    <MicroEdgeBox key={name} component="li" display="flex" alignItems="center" py={1} mb={1}>
+      <MicroEdgeBox mr={2}>
+        <MicroEdgeAvatar src={image} alt="something here" variant="rounded" shadow="md" />
+      </MicroEdgeBox>
+      <MicroEdgeBox
         display="flex"
         flexDirection="column"
         alignItems="flex-start"
         justifyContent="center"
       >
-        <ArgonTypography variant="button" fontWeight="medium">
+        <MicroEdgeTypography variant="button" fontWeight="medium">
           {name}
-        </ArgonTypography>
-        <ArgonTypography variant="caption" color="text">
+        </MicroEdgeTypography>
+        <MicroEdgeTypography variant="caption" color="text">
           {description}
-        </ArgonTypography>
-      </ArgonBox>
-      <ArgonBox ml="auto">
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+      <MicroEdgeBox ml="auto">
         {action.type === "internal" ? (
-          <ArgonButton component={Link} to={action.route} variant="text" color="info">
+          <MicroEdgeButton component={Link} to={action.route} variant="text" color="info">
             {action.label}
-          </ArgonButton>
+          </MicroEdgeButton>
         ) : (
-          <ArgonButton
+          <MicroEdgeButton
             component="a"
             href={action.route}
             target="_blank"
@@ -62,24 +62,24 @@ function ProfilesList({ title, profiles }) {
             color={action.color}
           >
             {action.label}
-          </ArgonButton>
+          </MicroEdgeButton>
         )}
-      </ArgonBox>
-    </ArgonBox>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   ));
 
   return (
     <Card sx={{ height: "100%" }}>
-      <ArgonBox pt={2} px={2}>
-        <ArgonTypography variant="h6" fontWeight="medium" textTransform="capitalize">
+      <MicroEdgeBox pt={2} px={2}>
+        <MicroEdgeTypography variant="h6" fontWeight="medium" textTransform="capitalize">
           {title}
-        </ArgonTypography>
-      </ArgonBox>
-      <ArgonBox p={2}>
-        <ArgonBox component="ul" display="flex" flexDirection="column" p={0} m={0}>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+      <MicroEdgeBox p={2}>
+        <MicroEdgeBox component="ul" display="flex" flexDirection="column" p={0} m={0}>
           {renderProfiles}
-        </ArgonBox>
-      </ArgonBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

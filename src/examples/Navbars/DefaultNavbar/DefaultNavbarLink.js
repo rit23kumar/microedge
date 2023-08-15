@@ -3,10 +3,10 @@
 * Material Dashboard 2 PRO React - v2.1.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -23,12 +23,12 @@ import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 function DefaultNavbarLink({ icon, name, route, light }) {
   return (
-    <ArgonBox
+    <MicroEdgeBox
       component={Link}
       to={route}
       mx={1}
@@ -45,7 +45,7 @@ function DefaultNavbarLink({ icon, name, route, light }) {
       >
         {icon}
       </Icon>
-      <ArgonTypography
+      <MicroEdgeTypography
         variant="button"
         fontWeight="regular"
         color={light ? "white" : "dark"}
@@ -53,8 +53,8 @@ function DefaultNavbarLink({ icon, name, route, light }) {
         sx={{ width: "100%", lineHeight: 0 }}
       >
         &nbsp;{name}
-      </ArgonTypography>
-    </ArgonBox>
+      </MicroEdgeTypography>
+    </MicroEdgeBox>
   );
 }
 

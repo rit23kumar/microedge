@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -19,9 +19,9 @@ import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // Images
 const bgImage =
@@ -47,17 +47,17 @@ function MediaPlayer() {
         backgroundPosition: "center",
       })}
     >
-      <ArgonBox p={3} position="relative" lineHeight={0}>
-        <ArgonTypography variant="h5" color="white" fontWeight="medium">
+      <MicroEdgeBox p={3} position="relative" lineHeight={0}>
+        <MicroEdgeTypography variant="h5" color="white" fontWeight="medium">
           Some Kind Of Blues
-        </ArgonTypography>
-        <ArgonTypography variant="button" color="white" fontWeight="regular">
+        </MicroEdgeTypography>
+        <MicroEdgeTypography variant="button" color="white" fontWeight="regular">
           Deftones
-        </ArgonTypography>
-        <ArgonBox display="flex" mt={6} pt={1}>
-          <ArgonBox display="flex" alignItems="center" justifyContent="center">
+        </MicroEdgeTypography>
+        <MicroEdgeBox display="flex" mt={6} pt={1}>
+          <MicroEdgeBox display="flex" alignItems="center" justifyContent="center">
             <Tooltip title="Prev" placement="top">
-              <ArgonButton
+              <MicroEdgeButton
                 variant="outlined"
                 size="large"
                 circular
@@ -65,10 +65,10 @@ function MediaPlayer() {
                 sx={mediaPlayerButtonStyles}
               >
                 <Icon>skip_previous</Icon>
-              </ArgonButton>
+              </MicroEdgeButton>
             </Tooltip>
             <Tooltip title="Pause" placement="top">
-              <ArgonButton
+              <MicroEdgeButton
                 variant="outlined"
                 size="large"
                 circular
@@ -76,10 +76,10 @@ function MediaPlayer() {
                 sx={mediaPlayerButtonStyles}
               >
                 <Icon>play_arrow</Icon>
-              </ArgonButton>
+              </MicroEdgeButton>
             </Tooltip>
             <Tooltip title="Next" placement="top">
-              <ArgonButton
+              <MicroEdgeButton
                 variant="outlined"
                 size="large"
                 circular
@@ -87,11 +87,11 @@ function MediaPlayer() {
                 sx={mediaPlayerButtonStyles}
               >
                 <Icon>skip_next</Icon>
-              </ArgonButton>
+              </MicroEdgeButton>
             </Tooltip>
-          </ArgonBox>
-        </ArgonBox>
-      </ArgonBox>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

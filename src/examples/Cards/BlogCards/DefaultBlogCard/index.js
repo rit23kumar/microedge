@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -24,27 +24,27 @@ import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonAvatar from "components/ArgonAvatar";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeAvatar from "components/MicroEdgeAvatar";
 
 function DefaultBlogCard({ image, category, title, description, author, action }) {
   return (
     <Card>
-      <ArgonBox mt={2} mx={2}>
+      <MicroEdgeBox mt={2} mx={2}>
         {action.type === "internal" ? (
           <Link to={action.route}>
-            <ArgonBox component="img" src={image} alt={title} width="100%" borderRadius="lg" />
+            <MicroEdgeBox component="img" src={image} alt={title} width="100%" borderRadius="lg" />
           </Link>
         ) : (
           <MuiLink href={action.route} target="_blank" rel="noreferrer">
-            <ArgonBox component="img" src={image} alt={title} width="100%" borderRadius="lg" />
+            <MicroEdgeBox component="img" src={image} alt={title} width="100%" borderRadius="lg" />
           </MuiLink>
         )}
-      </ArgonBox>
-      <ArgonBox pb={3} px={3}>
+      </MicroEdgeBox>
+      <MicroEdgeBox pb={3} px={3}>
         {category && (
-          <ArgonTypography
+          <MicroEdgeTypography
             variant="caption"
             color={category.color}
             textTransform="uppercase"
@@ -52,50 +52,50 @@ function DefaultBlogCard({ image, category, title, description, author, action }
             textGradient
           >
             {category.label}
-          </ArgonTypography>
+          </MicroEdgeTypography>
         )}
-        <ArgonBox display="block" mt={0.5} mb={1}>
+        <MicroEdgeBox display="block" mt={0.5} mb={1}>
           {action.type === "internal" ? (
             <Link to={action.route}>
-              <ArgonTypography
+              <MicroEdgeTypography
                 display="inline"
                 variant="h5"
                 textTransform="capitalize"
                 className="color-background"
               >
                 {title}
-              </ArgonTypography>
+              </MicroEdgeTypography>
             </Link>
           ) : (
             <MuiLink href={action.route} target="_blank" rel="noreferrer">
-              <ArgonTypography
+              <MicroEdgeTypography
                 display="inline"
                 variant="h5"
                 textTransform="capitalize"
                 className="color-background"
               >
                 {title}
-              </ArgonTypography>
+              </MicroEdgeTypography>
             </MuiLink>
           )}
-        </ArgonBox>
-        <ArgonTypography variant="body2" component="p" color="text">
+        </MicroEdgeBox>
+        <MicroEdgeTypography variant="body2" component="p" color="text">
           {description}
-        </ArgonTypography>
+        </MicroEdgeTypography>
         {author && (
-          <ArgonBox display="flex" alignItems="center" mt={3}>
-            <ArgonAvatar variant="rounded" src={author.image} alt={author.name} shadow="md" />
-            <ArgonBox pl={2} lineHeight={0}>
-              <ArgonTypography component="h6" variant="button" fontWeight="medium" gutterBottom>
+          <MicroEdgeBox display="flex" alignItems="center" mt={3}>
+            <MicroEdgeAvatar variant="rounded" src={author.image} alt={author.name} shadow="md" />
+            <MicroEdgeBox pl={2} lineHeight={0}>
+              <MicroEdgeTypography component="h6" variant="button" fontWeight="medium" gutterBottom>
                 {author.name}
-              </ArgonTypography>
-              <ArgonTypography variant="caption" color="text">
+              </MicroEdgeTypography>
+              <MicroEdgeTypography variant="caption" color="text">
                 {author.date}
-              </ArgonTypography>
-            </ArgonBox>
-          </ArgonBox>
+              </MicroEdgeTypography>
+            </MicroEdgeBox>
+          </MicroEdgeBox>
         )}
-      </ArgonBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

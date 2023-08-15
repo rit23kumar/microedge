@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -22,24 +22,24 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite contexts
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction }) {
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { darkMode } = controller;
 
   return (
     <Card>
-      <ArgonBox bgColor={bgColor === "white" && darkMode ? "transparent" : bgColor}>
-        <ArgonBox p={2}>
+      <MicroEdgeBox bgColor={bgColor === "white" && darkMode ? "transparent" : bgColor}>
+        <MicroEdgeBox p={2}>
           <Grid container alignItems="center">
             {direction === "left" ? (
               <Grid item>
-                <ArgonBox
+                <MicroEdgeBox
                   bgColor={bgColor === "white" ? icon.color : "white"}
                   color={bgColor === "white" ? "white" : "dark"}
                   width="3rem"
@@ -53,12 +53,12 @@ function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction
                   <Icon fontSize="small" color="inherit">
                     {icon.component}
                   </Icon>
-                </ArgonBox>
+                </MicroEdgeBox>
               </Grid>
             ) : null}
             <Grid item xs={8}>
-              <ArgonBox ml={direction === "left" ? 2 : 0} lineHeight={1}>
-                <ArgonTypography
+              <MicroEdgeBox ml={direction === "left" ? 2 : 0} lineHeight={1}>
+                <MicroEdgeTypography
                   variant="button"
                   color={bgColor === "white" ? "text" : "white"}
                   opacity={bgColor === "white" ? 1 : 0.7}
@@ -66,22 +66,22 @@ function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction
                   fontWeight={title.fontWeight}
                 >
                   {title.text}
-                </ArgonTypography>
-                <ArgonTypography
+                </MicroEdgeTypography>
+                <MicroEdgeTypography
                   variant="h5"
                   fontWeight="bold"
                   color={bgColor === "white" ? "dark" : "white"}
                 >
                   {count}{" "}
-                  <ArgonTypography variant="button" color={percentage.color} fontWeight="bold">
+                  <MicroEdgeTypography variant="button" color={percentage.color} fontWeight="bold">
                     {percentage.text}
-                  </ArgonTypography>
-                </ArgonTypography>
-              </ArgonBox>
+                  </MicroEdgeTypography>
+                </MicroEdgeTypography>
+              </MicroEdgeBox>
             </Grid>
             {direction === "right" ? (
               <Grid item xs={4}>
-                <ArgonBox
+                <MicroEdgeBox
                   bgColor={bgColor === "white" ? icon.color : "white"}
                   color={bgColor === "white" ? "white" : "dark"}
                   width="3rem"
@@ -96,12 +96,12 @@ function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction
                   <Icon fontSize="small" color="inherit">
                     {icon.component}
                   </Icon>
-                </ArgonBox>
+                </MicroEdgeBox>
               </Grid>
             ) : null}
           </Grid>
-        </ArgonBox>
-      </ArgonBox>
+        </MicroEdgeBox>
+      </MicroEdgeBox>
     </Card>
   );
 }

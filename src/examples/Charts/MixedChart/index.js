@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -25,8 +25,8 @@ import { Line } from "react-chartjs-2";
 import Card from "@mui/material/Card";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
 
 // MicroEdge Suite helper functions
 import gradientChartLine from "assets/theme/functions/gradientChartLine";
@@ -123,30 +123,30 @@ function MixedChart({ title, description, height, chart }) {
   }, [chart]);
 
   const renderChart = (
-    <ArgonBox p={2}>
+    <MicroEdgeBox p={2}>
       {title || description ? (
-        <ArgonBox px={description ? 1 : 0} pt={description ? 1 : 0}>
+        <MicroEdgeBox px={description ? 1 : 0} pt={description ? 1 : 0}>
           {title && (
-            <ArgonBox mb={1}>
-              <ArgonTypography variant="h6">{title}</ArgonTypography>
-            </ArgonBox>
+            <MicroEdgeBox mb={1}>
+              <MicroEdgeTypography variant="h6">{title}</MicroEdgeTypography>
+            </MicroEdgeBox>
           )}
-          <ArgonBox mb={2}>
-            <ArgonTypography component="div" variant="button" fontWeight="regular" color="text">
+          <MicroEdgeBox mb={2}>
+            <MicroEdgeTypography component="div" variant="button" fontWeight="regular" color="text">
               {description}
-            </ArgonTypography>
-          </ArgonBox>
-        </ArgonBox>
+            </MicroEdgeTypography>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
       ) : null}
       {useMemo(
         () => (
-          <ArgonBox ref={chartRef} sx={{ height }}>
+          <MicroEdgeBox ref={chartRef} sx={{ height }}>
             <Line data={data} options={options} />
-          </ArgonBox>
+          </MicroEdgeBox>
         ),
         [chartData, height]
       )}
-    </ArgonBox>
+    </MicroEdgeBox>
   );
 
   return title || description ? <Card>{renderChart}</Card> : renderChart;

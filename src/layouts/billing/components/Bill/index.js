@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -20,19 +20,19 @@ import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 
 // MicroEdge Suite components
-import ArgonBox from "components/ArgonBox";
-import ArgonTypography from "components/ArgonTypography";
-import ArgonButton from "components/ArgonButton";
+import MicroEdgeBox from "components/MicroEdgeBox";
+import MicroEdgeTypography from "components/MicroEdgeTypography";
+import MicroEdgeButton from "components/MicroEdgeButton";
 
 // MicroEdge Suite contexts
-import { useArgonController } from "context";
+import { useMicroEdgeController } from "context";
 
 function Bill({ name, company, email, vat, noGutter }) {
-  const [controller] = useArgonController();
+  const [controller] = useMicroEdgeController();
   const { darkMode } = controller;
 
   return (
-    <ArgonBox
+    <MicroEdgeBox
       component="li"
       display="flex"
       justifyContent="space-between"
@@ -45,58 +45,58 @@ function Bill({ name, company, email, vat, noGutter }) {
         backgroundColor: darkMode ? background.default : grey[100],
       })}
     >
-      <ArgonBox width="100%" display="flex" flexDirection="column">
-        <ArgonBox
+      <MicroEdgeBox width="100%" display="flex" flexDirection="column">
+        <MicroEdgeBox
           display="flex"
           justifyContent="space-between"
           alignItems={{ xs: "flex-start", sm: "center" }}
           flexDirection={{ xs: "column", sm: "row" }}
           mb={1}
         >
-          <ArgonTypography variant="button" fontWeight="medium" textTransform="capitalize">
+          <MicroEdgeTypography variant="button" fontWeight="medium" textTransform="capitalize">
             {name}
-          </ArgonTypography>
+          </MicroEdgeTypography>
 
-          <ArgonBox
+          <MicroEdgeBox
             display="flex"
             alignItems="center"
             mt={{ xs: 2, sm: 0 }}
             ml={{ xs: -1.5, sm: 0 }}
           >
-            <ArgonBox mr={1}>
-              <ArgonButton variant="text" color="error">
+            <MicroEdgeBox mr={1}>
+              <MicroEdgeButton variant="text" color="error">
                 <Icon>delete</Icon>&nbsp;Delete
-              </ArgonButton>
-            </ArgonBox>
-            <ArgonButton variant="text" color="dark">
+              </MicroEdgeButton>
+            </MicroEdgeBox>
+            <MicroEdgeButton variant="text" color="dark">
               <Icon>edit</Icon>&nbsp;Edit
-            </ArgonButton>
-          </ArgonBox>
-        </ArgonBox>
-        <ArgonBox mb={1} lineHeight={0}>
-          <ArgonTypography variant="caption" color="text">
+            </MicroEdgeButton>
+          </MicroEdgeBox>
+        </MicroEdgeBox>
+        <MicroEdgeBox mb={1} lineHeight={0}>
+          <MicroEdgeTypography variant="caption" color="text">
             Company Name:&nbsp;&nbsp;&nbsp;
-            <ArgonTypography variant="caption" fontWeight="medium" textTransform="capitalize">
+            <MicroEdgeTypography variant="caption" fontWeight="medium" textTransform="capitalize">
               {company}
-            </ArgonTypography>
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox mb={1} lineHeight={0}>
-          <ArgonTypography variant="caption" color="text">
+            </MicroEdgeTypography>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeBox mb={1} lineHeight={0}>
+          <MicroEdgeTypography variant="caption" color="text">
             Email Address:&nbsp;&nbsp;&nbsp;
-            <ArgonTypography variant="caption" fontWeight="medium">
+            <MicroEdgeTypography variant="caption" fontWeight="medium">
               {email}
-            </ArgonTypography>
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonTypography variant="caption" color="text">
+            </MicroEdgeTypography>
+          </MicroEdgeTypography>
+        </MicroEdgeBox>
+        <MicroEdgeTypography variant="caption" color="text">
           VAT Number:&nbsp;&nbsp;&nbsp;
-          <ArgonTypography variant="caption" fontWeight="medium">
+          <MicroEdgeTypography variant="caption" fontWeight="medium">
             {vat}
-          </ArgonTypography>
-        </ArgonTypography>
-      </ArgonBox>
-    </ArgonBox>
+          </MicroEdgeTypography>
+        </MicroEdgeTypography>
+      </MicroEdgeBox>
+    </MicroEdgeBox>
   );
 }
 

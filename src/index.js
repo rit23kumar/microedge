@@ -3,10 +3,10 @@
 * MicroEdge Suite - v1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.rishu.fun/product/argon-dashboard-material-ui
+* Copyright 2023 MicroEdge (https://www.rishu.fun)
 
-Coded by www.creative-tim.com
+Coded by www.rishu.fun
 
  =========================================================
 
@@ -19,7 +19,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "App";
 
 // Soft UI Context Provider
-import { ArgonControllerProvider } from "context";
+import { MicroEdgeControllerProvider } from "context";
 
 // react-perfect-scrollbar component
 import PerfectScrollbar from "react-perfect-scrollbar";
@@ -32,10 +32,10 @@ const root = createRoot(container);
 
 root.render(
   <BrowserRouter>
-    <ArgonControllerProvider>
+    <MicroEdgeControllerProvider>
       <PerfectScrollbar>
         <App />
       </PerfectScrollbar>
-    </ArgonControllerProvider>
+    </MicroEdgeControllerProvider>
   </BrowserRouter>
 );

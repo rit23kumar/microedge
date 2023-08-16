@@ -89,7 +89,7 @@ const routes = [
     icon: <MicroEdgeBox component="i" color="error" fontSize="14px" className="ni ni-world-2" />,
     component: <RTL />,
   },
-  { type: "title", title: "Account", key: "account-pages" },
+  { type: "title", title: "Account1", key: "account-pages" },
   {
     type: "route",
     name: "Profile",
